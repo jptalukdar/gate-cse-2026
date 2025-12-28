@@ -35,4 +35,10 @@ If table $S$ references $R$ with `ON DELETE CASCADE`, what happens when a row in
 - **Hard Aspect:** Constraints in the presence of NULLs.
   - Primary key cannot have NULL, but a **Unique** constraint can have multiple NULLs in most SQL implementations (though standard varies).
 - **Complexity:** Assertions and Triggers.
-  - Identifying the firing order of triggers (Before/After, Row/Statement level).
+  - Identifying the firing order of triggers (Before/After, Row/Statement level)
+
+---
+
+## References
+- [Data integrity (Wikipedia)](https://en.wikipedia.org/wiki/Data_integrity)
+- [Referential integrity (Wikipedia)](https://en.wikipedia.org/wiki/Referential_integrity)

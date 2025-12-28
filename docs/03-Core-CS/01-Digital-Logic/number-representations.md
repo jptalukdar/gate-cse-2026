@@ -48,4 +48,10 @@ Consider a floating-point system with 1 bit sign, 3 bit biased exponent (bias=3)
   - Value = $+1.00 \times 2^{-2} = 0.25$.
 - **The "Trap":** Exponent bits `000` and `111` are reserved for Denormalized numbers and NaN/Infinity respectively. Using $E_{stored}=0$ would lead to a denormalized number, which is a different category.
 - **Hard Aspect:** Differentiating between the "Smallest Normalized" and "Smallest Denormalized" value.
-  - Smallest Denormalized (for same system): $0.01_b \times 2^{1-3} = 0.25 \times 2^{-2} = 0.0625$.
+  - Smallest Denormalized (for same system): $0.01_b \times 2^{1-3} = 0.25 \times 2^{-2} = 0.0625$
+
+---
+
+## References
+- [Signed number representations (Wikipedia)](https://en.wikipedia.org/wiki/Signed_number_representations)
+- [IEEE 754 (Wikipedia)](https://en.wikipedia.org/wiki/IEEE_754)

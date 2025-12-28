@@ -48,4 +48,10 @@ Two processes P1 and P2 share a variable `x` initialized to 0. Both execute `x =
   - Min value: 2 (if properly interleaved).
 - **Hard Aspect:** Binary semaphore implementation of a Counting semaphore.
 - **Complexity:** Peterson's Algorithm and TSL (Test-and-Set Lock) properties.
-  - Peterson's: Satisfies Mutual Exclusion, Progress, and Bounded Waiting for 2 processes.
+  - Peterson's: Satisfies Mutual Exclusion, Progress, and Bounded Waiting for 2 processes
+
+---
+
+## References
+- [Inter-process communication (Wikipedia)](https://en.wikipedia.org/wiki/Inter-process_communication)
+- [Semaphore (programming) (Wikipedia)](https://en.wikipedia.org/wiki/Semaphore_(programming))

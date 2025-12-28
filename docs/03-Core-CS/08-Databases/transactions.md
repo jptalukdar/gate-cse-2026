@@ -42,4 +42,10 @@ Which property is guaranteed by Strict 2PL?
 - **Hard Aspect:** View Serializability calculation.
   - If a schedule is NOT conflict serializable, it might still be view serial if it has "blind writes" (writing without reading).
 - **Complexity:** Thomas Write Rule.
-  - Allows $W(x)$ even if $TS(T) < WTS(X)$ by ignoring the write (since a later value is already written).
+  - Allows $W(x)$ even if $TS(T) < WTS(X)$ by ignoring the write (since a later value is already written)
+
+---
+
+## References
+- [Database transaction (Wikipedia)](https://en.wikipedia.org/wiki/Database_transaction)
+- [Concurrency control (Wikipedia)](https://en.wikipedia.org/wiki/Concurrency_control)

@@ -41,4 +41,9 @@ Is it always possible to decompose a relation into BCNF that is both lossless an
   - Finding the Canonical Cover requires removing extraneous attributes and redundant FDs.
 - **Hard Aspect:** Counting the number of Candidate Keys for a given set of FDs.
   - Example: $R(A, B, C, D)$, $F = \{AB \to CD, CD \to AB\}$. Keys: $\{AB, CD\}$.
-- **Complexity:** Higher Normal Forms (4NF for Multi-valued dependencies, 5NF for Join dependencies). Rarely asked but important to know definitions.
+- **Complexity:** Higher Normal Forms (4NF for Multi-valued dependencies, 5NF for Join dependencies). Rarely asked but important to know definitions
+
+---
+
+## References
+- [Database normalization (Wikipedia)](https://en.wikipedia.org/wiki/Database_normalization)

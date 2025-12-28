@@ -51,4 +51,10 @@ Which combination of traversals uniquely identifies a binary tree?
   - $n = n_0 + n_1 + n_2$.
   - Total edges = $n - 1$.
   - Sum of Out-degrees = $0 \cdot n_0 + 1 \cdot n_1 + 2 \cdot n_2 = n - 1$.
-  - Solving these equations is a common GATE requirement.
+  - Solving these equations is a common GATE requirement
+
+---
+
+## References
+- [Tree (data structure) (Wikipedia)](https://en.wikipedia.org/wiki/Tree_(data_structure))
+- [Binary tree (Wikipedia)](https://en.wikipedia.org/wiki/Binary_tree)

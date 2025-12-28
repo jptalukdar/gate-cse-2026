@@ -46,4 +46,11 @@ An ISP has block `10.1.1.0/24`. It needs to divide this for 3 companies needing 
 - **Hard Aspect:** Fragment size calculation in IPv4.
   - Offset = (Bytes from start) / 8.
   - Data must be a multiple of 8 (except last fragment).
-- **Complexity:** Private IP ranges (10.x, 172.16-31.x, 192.168.x) and Loopback (127.0.0.1).
+- **Complexity:** Private IP ranges (10.x, 172.16-31.x, 192.168.x) and Loopback (127.0.0.1)
+
+---
+
+## References
+- [IP address (Wikipedia)](https://en.wikipedia.org/wiki/IP_address)
+- [IPv4 (Wikipedia)](https://en.wikipedia.org/wiki/IPv4)
+- [Classless Inter-Domain Routing (Wikipedia)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)

@@ -37,4 +37,11 @@ If Host A in Subnet 1 wants to send a packet to Host B in Subnet 2, whose MAC ad
 - **Hard Aspect:** ICMP error message structure.
   - ICMP error packets include the IP header + first 8 bytes of the original datagram to help the sender identify the error.
 - **Complexity:** DHCP Relay Agents.
-  - How a client gets an IP if the DHCP server is in a different subnet (Router forwards the broadcast as a unicast).
+  - How a client gets an IP if the DHCP server is in a different subnet (Router forwards the broadcast as a unicast)
+
+---
+
+## References
+- [Address Resolution Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
+- [Internet Control Message Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol)
+- [Dynamic Host Configuration Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)

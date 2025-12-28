@@ -41,4 +41,10 @@ Which collision resolution technique suffers from Primary Clustering?
   - Answer: **$O(n)$**. This happens if all $n$ elements hash to the same slot (chain length $= n$).
 - **Hard Aspect:** Calculating the expected number of probes for a successful/unsuccessful search with specific $\alpha$. 
   - For $\alpha = 0.5$ in Linear Probing: $E[S] = \frac{1}{2}(1 + \frac{1}{1-0.5}) = 1.5$.
-- **Complexity:** Double Hashing requirements. $h_2(x)$ must be relatively prime to $m$ to ensure all slots are checked.
+- **Complexity:** Double Hashing requirements. $h_2(x)$ must be relatively prime to $m$ to ensure all slots are checked
+
+---
+
+## References
+- [Hash function (Wikipedia)](https://en.wikipedia.org/wiki/Hash_function)
+- [Hash table (Wikipedia)](https://en.wikipedia.org/wiki/Hash_table)

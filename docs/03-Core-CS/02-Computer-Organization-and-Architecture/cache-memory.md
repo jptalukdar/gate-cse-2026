@@ -55,4 +55,10 @@ Compare the number of memory accesses for a Write-Through vs Write-Back cache fo
   - **No-Write-Allocate**: Update memory directly without bringing the block to cache.
 - **Complexity:** Calculating average access time when the dirty block eviction probability is given.
   $T_{avg} = H \times T_c + (1-H) \times [T_m + P_{dirty} \times T_m]$
-  (If the missed block is replaced by a dirty block, we pay for two memory accesses).
+  (If the missed block is replaced by a dirty block, we pay for two memory accesses)
+
+---
+
+## References
+- [CPU cache (Wikipedia)](https://en.wikipedia.org/wiki/CPU_cache)
+- [Cache replacement policies (Wikipedia)](https://en.wikipedia.org/wiki/Cache_replacement_policies)

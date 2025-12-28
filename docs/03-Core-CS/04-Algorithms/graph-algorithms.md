@@ -48,4 +48,11 @@ If a graph has two edges with the same minimum weight, is the MST always unique?
 - **Hard Aspect:** Dijkstra's behavior with negative edges.
   - Question: "Will Dijkstra find the shortest path if there is one negative edge (no cycles)?"
   - Answer: **NO**. Dijkstra might permanently set a distance to a node before seeing a later negative correction.
-- **Complexity:** Number of possible Topological Sorts for a Directed Acyclic Graph (DAG). Requires finding nodes with in-degree 0 and exploring permutations.
+- **Complexity:** Number of possible Topological Sorts for a Directed Acyclic Graph (DAG). Requires finding nodes with in-degree 0 and exploring permutations
+
+---
+
+## References
+- [Dijkstra's algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+- [Prim's algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
+- [Kruskal's algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)

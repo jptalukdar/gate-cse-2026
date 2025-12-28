@@ -51,4 +51,10 @@ A disk has 1 KB blocks and 4-byte pointers. An Inode has 10 direct, 1 single ind
 - **Hard Aspect:** Disk rotational latency and transfer time calculation.
   - $Time = \text{Seek Time} + \text{Rotational Latency} + \text{Transfer Time}$.
   - Avg Rotational Latency = $0.5 \times \text{Time for one rotation}$.
-- **Complexity:** File systems with bitmapped free-space management and the overhead of storing the bitmap.
+- **Complexity:** File systems with bitmapped free-space management and the overhead of storing the bitmap
+
+---
+
+## References
+- [File system (Wikipedia)](https://en.wikipedia.org/wiki/File_system)
+- [Inode (Wikipedia)](https://en.wikipedia.org/wiki/Inode)

@@ -41,4 +41,9 @@ Given an ER diagram with multiple relationships, some being 1:N and some total p
   - A ternary relationship (among 3 entities) always needs its own table, regardless of cardinality.
 - **Hard Aspect:** Weak Entities.
   - A Weak Entity depends on its identifying owner. The Identifying Relationship and the Weak Entity are merged into one table.
-- **Complexity:** ER diagrams with attributes on the relationships themselves.
+- **Complexity:** ER diagrams with attributes on the relationships themselves
+
+---
+
+## References
+- [Entity–relationship model (Wikipedia)](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model)

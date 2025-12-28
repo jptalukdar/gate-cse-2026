@@ -38,4 +38,9 @@ An array `A[-5...5][-10...10]` is stored in Row Major Order. Find the index calc
 - **The "Trap":** Using $i$ directly instead of $(i - L_1)$ when the lower bound is not zero.
 - **Complexity:** Tri-diagonal or Band-matrix mapping.
   - A matrix where only $A[i][i]$, $A[i][i-1]$, $A[i][i+1]$ are non-zero.
-  - Efficiently mapping these few elements into a 1D array to save space and finding the formula.
+  - Efficiently mapping these few elements into a 1D array to save space and finding the formula
+
+---
+
+## References
+- [Array data structure (Wikipedia)](https://en.wikipedia.org/wiki/Array_data_structure)

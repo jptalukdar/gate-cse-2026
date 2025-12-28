@@ -46,4 +46,11 @@ Compare $f(n) = 2^n$ and $g(n) = n^{\log n}$.
 - **The "Trap":** Confusing $n^{\log n}$ with $(\log n)^n$. $(\log n)^n$ is actually very large, roughly $n^{\log \log n}$.
 - **Complexity:** Master Theorem cases where $f(n) = n^c \log^k n$.
   - If $c = \log_b a$, then $T(n) = \Theta(n^c \log^{k+1} n)$.
-  - *Example:* $T(n) = 2T(n/2) + n \log n \implies c=1, \log_2 2=1 \implies T(n) = n \log^2 n$.
+  - *Example:* $T(n) = 2T(n/2) + n \log n \implies c=1, \log_2 2=1 \implies T(n) = n \log^2 n$
+
+---
+
+## References
+- [Asymptotic analysis (Wikipedia)](https://en.wikipedia.org/wiki/Asymptotic_analysis)
+- [Big O notation (Wikipedia)](https://en.wikipedia.org/wiki/Big_O_notation)
+- [Master theorem (analysis of algorithms) (Wikipedia)](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))

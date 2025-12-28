@@ -37,4 +37,9 @@ Given a flow graph and definitions, find the set of reaching definitions at the 
 - **The "Trap":** "Very Busy Expressions" vs "Available Expressions".
 - **Hard Aspect:** Loop Invariant Code Motion with side-effects.
   - Question: "Can `x = y + z` be moved out of a loop if `x` is redefined later in the same loop?" (No).
-- **Complexity:** Data flow for pointers and arrays (Alias Analysis). Pointers make data flow significantly more complex as one write could affect multiple variables.
+- **Complexity:** Data flow for pointers and arrays (Alias Analysis). Pointers make data flow significantly more complex as one write could affect multiple variables
+
+---
+
+## References
+- [Data-flow analysis (Wikipedia)](https://en.wikipedia.org/wiki/Data-flow_analysis)

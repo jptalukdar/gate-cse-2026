@@ -6,3 +6,8 @@
 | $q_3$ | $q_5$ | $q_5$ |
 | $q_4$ | $q_5$ | $q_5$ |
 | $q_5$ | $q_5$ | $q_5$ |
+
+---
+
+## References
+- [Myhill–Nerode theorem (Wikipedia)](https://en.wikipedia.org/wiki/Myhill%E2%80%93Nerode_theorem)

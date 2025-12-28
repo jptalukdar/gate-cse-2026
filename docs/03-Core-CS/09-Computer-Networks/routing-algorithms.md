@@ -38,3 +38,10 @@ If three nodes A, B, C are in a line (A-B-C) using DV, and the link A-B fails, h
   - BGP avoids loops by including the entire AS path in the update.
 - **Complexity:** OSPF Link State Advertisements (LSA) and flood control.
   - Question: "Total number of packets sent in a network of $N$ nodes to flood a new link state information?"
+
+---
+
+## References
+- [Routing (Wikipedia)](https://en.wikipedia.org/wiki/Routing)
+- [Distance-vector routing protocol (Wikipedia)](https://en.wikipedia.org/wiki/Distance-vector_routing_protocol)
+- [Link-state routing protocol (Wikipedia)](https://en.wikipedia.org/wiki/Link-state_routing_protocol)

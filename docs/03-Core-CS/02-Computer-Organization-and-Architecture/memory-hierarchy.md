@@ -41,4 +41,9 @@ In a 2-level cache system, L1 has a local hit rate of 0.8 and L2 has a local hit
   - $P(H_{global}) = P(H_1) + P(M_1)P(H_2)$
   - $P(H_{global}) = 0.8 + (1 - 0.8)(0.9) = 0.8 + (0.2)(0.9) = 0.8 + 0.18 = 0.98$.
 - **The "Trap":** Confusing "Local Hit Rate" (hit rate within that cache level for requests reaching it) with "Global Hit Rate" (hit rate relative to the total CPU requests).
-- **Hard Aspect:** When inclusive properties are used. In an **Inclusive Cache**, L2 must contain everything in L1. This affects eviction policies and coherence.
+- **Hard Aspect:** When inclusive properties are used. In an **Inclusive Cache**, L2 must contain everything in L1. This affects eviction policies and coherence
+
+---
+
+## References
+- [Memory hierarchy (Wikipedia)](https://en.wikipedia.org/wiki/Memory_hierarchy)

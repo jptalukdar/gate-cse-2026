@@ -42,4 +42,10 @@ Which of the following conditions is necessary for a language to be proven non-r
 - **Hard Aspect:** Using PL for CFL to disprove $a^n b^n c^n$. 
   - $vwx$ can span at most two different symbols (like $a$s and $b$s). 
   - Pumping $v$ and $x$ will increase $a$s and $b$s but the number of $c$s will remain $p$.
-  - This breaks the $n=m=k$ equality.
+  - This breaks the $n=m=k$ equality
+
+---
+
+## References
+- [Pumping lemma for regular languages (Wikipedia)](https://en.wikipedia.org/wiki/Pumping_lemma_for_regular_languages)
+- [Pumping lemma for context-free languages (Wikipedia)](https://en.wikipedia.org/wiki/Pumping_lemma_for_context-free_languages)

@@ -37,4 +37,10 @@ A host has one IP but multiple applications (HTTP, FTP, SMTP) running. How are i
   - Retransmission Timeout (RTO) calculation using smoothed RTT (SRTT).
   - $SRTT = (1-\alpha)SRTT_{old} + \alpha RTT_{new}$.
 - **Complexity:** Comparison of cumulative ACK (TCP) vs individual ACK.
-  - TCP ACKs indicate the "next expected byte", not the "last received byte".
+  - TCP ACKs indicate the "next expected byte", not the "last received byte"
+
+---
+
+## References
+- [Transport layer (Wikipedia)](https://en.wikipedia.org/wiki/Transport_layer)
+- [User Datagram Protocol (Wikipedia)](https://en.wikipedia.org/wiki/User_Datagram_Protocol)

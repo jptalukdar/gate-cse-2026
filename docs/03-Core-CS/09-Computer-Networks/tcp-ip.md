@@ -43,4 +43,10 @@ During 3-way handshake, if client sends SEQ=100 and server responds with ACK=101
   - If a packet has 100 bytes and starts with SEQ=1000, its last byte is 1099. The ACK for this packet will be 1100.
 - **Hard Aspect:** Bandwidth-Delay Product (BDP) effect on window size.
   - To saturate a link: $W \ge \text{Link Capacity} \times RTT$.
-- **Complexity:** Silly Window Syndrome and its prevention (Nagle's algorithm and Clark's solution).
+- **Complexity:** Silly Window Syndrome and its prevention (Nagle's algorithm and Clark's solution)
+
+---
+
+## References
+- [Transmission Control Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+- [TCP congestion control (Wikipedia)](https://en.wikipedia.org/wiki/TCP_congestion_control)

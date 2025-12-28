@@ -48,4 +48,9 @@ What is the result of `WHERE X NOT IN (SELECT Y FROM T)` if the subquery returns
   - `SELECT Name FROM Students WHERE SID NOT IN (SELECT SID FROM Grades WHERE Grade = 'A')`. This logic is different from `WHERE Grade <> 'A'`.
 - **Hard Aspect:** Correlated subqueries. The inner query executes for every row of the outer query. Finding the time complexity or number of times the inner query runs.
 - **Complexity:** SQL Joins with `GROUP BY`.
-  - Identifying which set of names is returned by a query involving self-joins and `ANY / ALL` operators.
+  - Identifying which set of names is returned by a query involving self-joins and `ANY / ALL` operators
+
+---
+
+## References
+- [SQL (Wikipedia)](https://en.wikipedia.org/wiki/SQL)

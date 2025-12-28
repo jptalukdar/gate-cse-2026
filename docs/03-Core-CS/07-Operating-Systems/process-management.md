@@ -58,4 +58,9 @@ if(fork() == 0) {
 - **Complexity:** Calculating the total number of "hello" prints in a loop of `fork()`.
 - **Hard Aspect:** Orphan vs Zombie processes.
   - Orphan: Parent dies, init inherits.
-  - Zombie: Child dies, parent hasn't read exit status.
+  - Zombie: Child dies, parent hasn't read exit status
+
+---
+
+## References
+- [Process management (computing) (Wikipedia)](https://en.wikipedia.org/wiki/Process_management_(computing))

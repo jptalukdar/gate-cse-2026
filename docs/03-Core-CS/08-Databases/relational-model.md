@@ -47,4 +47,9 @@ Translate "Find students who have taken **every** course offered by the CS depar
 - **Complexity:** Tuple count in multiple joins. 
   - Max and Min tuples in a natural join of $R(A, B)$ and $S(B, C)$ given their sizes.
   - If $B$ is a primary key in $S$, max tuples is $|R|$.
-  - If $B$ is not a key in either, max tuples is $|R| \times |S|$.
+  - If $B$ is not a key in either, max tuples is $|R| \times |S|$
+
+---
+
+## References
+- [Relational model (Wikipedia)](https://en.wikipedia.org/wiki/Relational_model)

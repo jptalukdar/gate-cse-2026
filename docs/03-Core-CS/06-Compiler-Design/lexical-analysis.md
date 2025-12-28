@@ -49,4 +49,9 @@ If a lexer sees `count++`, why is it not `count`, `+`, `+`?
   - `/* comments /* inside */` - Lexical analyzer might treat the first `*/` as the end unless it handles nested comments (standard C doesn't).
 - **Hard Aspect:** Regular Expression for C-style identifiers.
   - Must start with `[a-zA-Z_]` and followed by `[a-zA-Z0-9_]*`.
-- **Complexity:** DFA for recognizing specific number types (Hex, Octal, Floating point).
+- **Complexity:** DFA for recognizing specific number types (Hex, Octal, Floating point)
+
+---
+
+## References
+- [Lexical analysis (Wikipedia)](https://en.wikipedia.org/wiki/Lexical_analysis)

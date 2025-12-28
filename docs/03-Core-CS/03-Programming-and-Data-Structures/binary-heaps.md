@@ -46,4 +46,9 @@ What is the complexity of finding the $k$-th smallest element using a Max-heap?
   - Question often asks: "Which of the following values can be the result of exactly 2 deletions/insertions in this heap?"
 - **Complexity:** Comparison of Heaps vs BSTs for "Find Min", "Find Max", and "Search".
   - Heap: Find Min (Min-heap) is $O(1)$. Search is $O(n)$.
-  - BST: Find Min is $O(log n)$. Search is $O(log n)$.
+  - BST: Find Min is $O(log n)$. Search is $O(log n)$
+
+---
+
+## References
+- [Binary heap (Wikipedia)](https://en.wikipedia.org/wiki/Binary_heap)

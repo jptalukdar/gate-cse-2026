@@ -50,4 +50,9 @@ An instruction `LOAD R1, @(R2)` uses indirect addressing through a pointer store
   3. **Data Fetch**: Register content $B$ is the effective address. $1$ memory access to read the actual data.
 - **Total**: $3$ memory accesses.
 - **The "Trap":** Sometimes the question specifies that the instruction is already in the Instruction Register (IR). In that case, exclude the fetch cycle.
-- **Hard Aspect:** Differentiating between "Register Indirect" (R2 contains address of data) and "Memory Indirect" (Instruction contains address $A$, which contains address $B$, which contains data).
+- **Hard Aspect:** Differentiating between "Register Indirect" (R2 contains address of data) and "Memory Indirect" (Instruction contains address $A$, which contains address $B$, which contains data)
+
+---
+
+## References
+- [Addressing mode (Wikipedia)](https://en.wikipedia.org/wiki/Addressing_mode)

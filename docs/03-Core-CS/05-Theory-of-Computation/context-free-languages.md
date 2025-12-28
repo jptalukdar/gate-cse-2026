@@ -46,4 +46,10 @@ Is the language $L = \{ww^R \mid w \in \{a, b\}^*\}$ a DCFL?
   - $CFL \cap CFL \neq CFL$.
   - $CFL \cap Regular = CFL$.
 - **Complexity:** Proving a language is not CFL using the Pumping Lemma for CFLs ($uvwxy$ split).
-  - $L = \{a^n b^n c^n\}$ is the classic example of a Non-CFL (CSL).
+  - $L = \{a^n b^n c^n\}$ is the classic example of a Non-CFL (CSL)
+
+---
+
+## References
+- [Context-free language (Wikipedia)](https://en.wikipedia.org/wiki/Context-free_language)
+- [Context-free grammar (Wikipedia)](https://en.wikipedia.org/wiki/Context-free_grammar)

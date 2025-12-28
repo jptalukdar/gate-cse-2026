@@ -45,4 +45,10 @@ Can Greedy (based on value/weight ratio) solve the 0/1 Knapsack problem?
 - **Hard Aspect:** Identifying the DP recurrence for specific problems.
   - Example: $T(i, j) = max(T(i-1, j), T(i-1, j-w_i) + v_i)$. 
   - Question: "Which of the following entries in the DP table is accessed to calculate $T(n, W)$?"
-- **Complexity:** Comparison of Huffman bits for different frequencies. Finding the range of bits for the most frequent character.
+- **Complexity:** Comparison of Huffman bits for different frequencies. Finding the range of bits for the most frequent character
+
+---
+
+## References
+- [Dynamic programming (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_programming)
+- [Greedy algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Greedy_algorithm)

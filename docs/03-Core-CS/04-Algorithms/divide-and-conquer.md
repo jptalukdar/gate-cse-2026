@@ -39,4 +39,9 @@ What is the complexity of finding the Median of $n$ elements in the worst case?
   - $T(n) = 2T(n/2) + n^2 \implies O(n^2)$ by Master Theorem.
 - **Complexity:** Multiplication of large integers (Karatsuba Algorithm).
   - Standard: $O(n^2)$.
-  - Karatsuba: $O(n^{1.58})$ using $3$ multiplications of size $n/2$.
+  - Karatsuba: $O(n^{1.58})$ using $3$ multiplications of size $n/2$
+
+---
+
+## References
+- [Divide-and-conquer algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)

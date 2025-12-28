@@ -40,4 +40,11 @@ Which protocol is used between the Sender's Mail Server and the Receiver's Mail 
 - **Hard Aspect:** DNS Caching and TTL.
   - If a DNS record is cached for 1 hour, updates won't be visible until it expires.
 - **Complexity:** HTTP Conditional GET using `If-Modified-Since`.
-  - Allows the browser to check if a cached copy is still valid without downloading the whole object again.
+  - Allows the browser to check if a cached copy is still valid without downloading the whole object again
+
+---
+
+## References
+- [Application layer (Wikipedia)](https://en.wikipedia.org/wiki/Application_layer)
+- [Domain Name System (Wikipedia)](https://en.wikipedia.org/wiki/Domain_Name_System)
+- [HTTP (Wikipedia)](https://en.wikipedia.org/wiki/HTTP)

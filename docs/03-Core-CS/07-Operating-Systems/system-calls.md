@@ -37,4 +37,9 @@ What is the sequence of outputs for nested `fork()` and `wait()`?
   - If `fork()` fails, it returns -1.
 - **Hard Aspect:** Mode switch vs Context switch.
   - A system call involves a **Mode Switch** (User to Kernel). It does not necessarily involve a Context Switch (Process to Process) unless the calling process blocks.
-- **Complexity:** Internal working of `execve` and how it handles open file descriptors.
+- **Complexity:** Internal working of `execve` and how it handles open file descriptors
+
+---
+
+## References
+- [System call (Wikipedia)](https://en.wikipedia.org/wiki/System_call)

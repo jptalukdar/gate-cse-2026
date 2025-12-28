@@ -56,4 +56,9 @@ What is `f(5)`?
   - Backtrack: `f(1) = 1 + 5 = 6`. `f(2) = 6 + 5 = 11`. `f(3) = 11 + 5 = 16`.
   - Final: `f(5) = 16 + 2 = 18`.
 - **The "Trap":** `static r` is shared across all recursive calls. Its value updates mid-recursion and persists.
-- **Complexity:** Nested recursion like `f(f(n-1))`. Requires very careful manual tracing of the stack.
+- **Complexity:** Nested recursion like `f(f(n-1))`. Requires very careful manual tracing of the stack
+
+---
+
+## References
+- [Recursion (computer science) (Wikipedia)](https://en.wikipedia.org/wiki/Recursion_(computer_science))

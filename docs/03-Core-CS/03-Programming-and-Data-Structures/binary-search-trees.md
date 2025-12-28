@@ -45,4 +45,10 @@ Delete 10 (root) from a BST. Who replaces it?
 - **Complexity:** Minimum nodes required to form an AVL tree of height $h$.
   - $N(h) = N(h-1) + N(h-2) + 1$. (Fibonacci-like).
   - $N(0)=1, N(1)=2, N(2)=4, N(3)=7, N(4)=12$.
-  - This is a very common numerical question.
+  - This is a very common numerical question
+
+---
+
+## References
+- [Binary search tree (Wikipedia)](https://en.wikipedia.org/wiki/Binary_search_tree)
+- [AVL tree (Wikipedia)](https://en.wikipedia.org/wiki/AVL_tree)

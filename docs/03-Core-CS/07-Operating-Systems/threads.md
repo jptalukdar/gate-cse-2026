@@ -31,4 +31,9 @@ If a User-level thread performs a blocking I/O operation, what happens to other 
 - **The "Trap":** Thinking that ULTs can run on different CPUs. They cannot; they are scheduled within a single kernel thread/process.
 - **Hard Aspect:** Context switch overhead differences.
   - Context switch between threads is faster than between processes because it doesn't involve changing the Page Table (CR3 register in x86).
-- **Complexity:** Many-to-Many vs One-to-One threading models.
+- **Complexity:** Many-to-Many vs One-to-One threading models
+
+---
+
+## References
+- [Thread (computing) (Wikipedia)](https://en.wikipedia.org/wiki/Thread_(computing))

@@ -49,4 +49,11 @@ How many states are in the minimized DFA that accepts all strings over $\{a, b\}
 - **Complexity:** Calculating the number of states in a DFA for "divisible by $N$" in binary.
   - Number of states = **$N$**. 
   - If the string is read MSB first, $q_i \xrightarrow{x} q_{(2i+x) \pmod N}$.
-  - If LSB first, it's more complex and requires reversing the DFA.
+  - If LSB first, it's more complex and requires reversing the DFA
+
+---
+
+## References
+- [Finite-state machine (Wikipedia)](https://en.wikipedia.org/wiki/Finite-state_machine)
+- [Deterministic finite automaton (Wikipedia)](https://en.wikipedia.org/wiki/Deterministic_finite_automaton)
+- [Nondeterministic finite automaton (Wikipedia)](https://en.wikipedia.org/wiki/Nondeterministic_finite_automaton)

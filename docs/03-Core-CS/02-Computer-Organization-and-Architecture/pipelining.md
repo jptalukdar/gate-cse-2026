@@ -56,4 +56,10 @@ In a 5-stage pipeline, 20% of instructions are conditional branches. 60% of thes
   - Average CPI = $Base CPI + (\text{Prob of Taken Branch} \times \text{Penalty})$
   - $Avg CPI = 1 + (0.12 \times 2) = 1.24$.
 - **Result:** 1.24 CPI.
-- **The "Trap":** Sometimes the branch penalty is given for *all* branches (if they aren't predicted), or specifically for *mispredictions*. You must read carefully whether the penalty applies to "Taken", "Not Taken", or "All" branch instructions.
+- **The "Trap":** Sometimes the branch penalty is given for *all* branches (if they aren't predicted), or specifically for *mispredictions*. You must read carefully whether the penalty applies to "Taken", "Not Taken", or "All" branch instructions
+
+---
+
+## References
+- [Instruction pipelining (Wikipedia)](https://en.wikipedia.org/wiki/Instruction_pipelining)
+- [Hazard (computer architecture) (Wikipedia)](https://en.wikipedia.org/wiki/Hazard_(computer_architecture))

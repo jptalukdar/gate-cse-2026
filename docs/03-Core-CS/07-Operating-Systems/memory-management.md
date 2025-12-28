@@ -48,4 +48,11 @@ Calculate Effective Memory Access Time (EMAT) with TLB and 2-level paging.
   - Page Table size = $O(\text{Number of Physical Frames}) \times PTE$.
 - **Complexity:** Segmentation with Paging.
   - Seg Table $\to$ Page Table $\to$ Frame. 
-  - Number of memory accesses for a single logical address is significantly higher.
+  - Number of memory accesses for a single logical address is significantly higher
+
+---
+
+## References
+- [Memory management (Wikipedia)](https://en.wikipedia.org/wiki/Memory_management)
+- [Paging (Wikipedia)](https://en.wikipedia.org/wiki/Paging)
+- [Virtual memory (Wikipedia)](https://en.wikipedia.org/wiki/Virtual_memory)

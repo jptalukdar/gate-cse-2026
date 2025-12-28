@@ -45,4 +45,9 @@ In RR, if context switch time is $C$ and time quantum is $Q$, what is the percen
 - **The "Trap":** Choosing an extremely small $Q$ to minimize $WT$. This increases context switch overhead drastically, making the system inefficient.
 - **Hard Aspect:** SRTF with tie-breaking rules.
   - If two processes have same remaining time, use PID or Arrival time? GATE usually specifies.
-- **Complexity:** Multi-level Queue vs Multi-level Feedback Queue (MLFQ). MLFQ is more complex as processes can move between queues based on their behavior (I/O bound vs CPU bound).
+- **Complexity:** Multi-level Queue vs Multi-level Feedback Queue (MLFQ). MLFQ is more complex as processes can move between queues based on their behavior (I/O bound vs CPU bound)
+
+---
+
+## References
+- [Scheduling (computing) (Wikipedia)](https://en.wikipedia.org/wiki/Scheduling_(computing))

@@ -41,4 +41,9 @@ Find the range of $m$ (resources) such that the system is never in deadlock for 
 - **Hard Aspect:** Deadlock Recovery in Distributed Systems.
 - **Complexity:** Banker's Algorithm with multiple requests.
   - Question: "If process P1 requests (1, 0, 2), should it be granted immediately?"
-  - Requires running the safety algorithm on the *post-grant* state.
+  - Requires running the safety algorithm on the *post-grant* state
+
+---
+
+## References
+- [Deadlock (Wikipedia)](https://en.wikipedia.org/wiki/Deadlock)

@@ -50,4 +50,10 @@ For a function $f$, if the number of PIs is 5, can the number of EPIs be 6?
   1. Simplify Expression.
   2. Map to NAND (Bubble push).
   3. Look for common sub-expressions to reuse gates.
-  *Note:* Often, the minimized Boolean expression doesn't lead directly to the fewest gates if sub-expressions aren't reused.
+  *Note:* Often, the minimized Boolean expression doesn't lead directly to the fewest gates if sub-expressions aren't reused
+
+---
+
+## References
+- [Karnaugh map (Wikipedia)](https://en.wikipedia.org/wiki/Karnaugh_map)
+- [Boolean function minimization (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_function_minimization)

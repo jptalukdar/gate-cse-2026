@@ -47,4 +47,9 @@ Is a PDA that allows either an $\epsilon$-transition OR an input transition from
 - **Complexity:** PDAs with multiple stacks.
   - 1 Stack PDA = CFL.
   - 2 Stack PDA = **Turing Machine** (Full Power).
-  - This is because two stacks can simulate a TM tape.
+  - This is because two stacks can simulate a TM tape
+
+---
+
+## References
+- [Pushdown automaton (Wikipedia)](https://en.wikipedia.org/wiki/Pushdown_automaton)

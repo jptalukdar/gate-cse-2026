@@ -37,4 +37,10 @@ Given a sorted array with duplicates, how to find the *first* occurrence of $X$?
   - Answer: **$O(n)$**. Why? Even though we reduce the range logically, finding the `mid` element takes $O(k)$ steps in a linked list.
 - **Complexity:** Ternary Search vs Binary Search.
   - Ternary search uses $2 \times log_3 n$ comparisons. 
-  - In terms of comparisons, Binary Search is superior.
+  - In terms of comparisons, Binary Search is superior
+
+---
+
+## References
+- [Search algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Search_algorithm)
+- [Binary search algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Binary_search_algorithm)

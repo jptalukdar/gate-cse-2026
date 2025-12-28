@@ -48,4 +48,11 @@ Given an LR item set, is there a shift-reduce (S-R) or reduce-reduce (R-R) confl
   - Merging two CLR states with same core but different lookaheads into one LALR state **can create R-R conflicts** but **never S-R conflicts**.
   - This is a very common theoretical question.
 - **Hard Aspect:** Identifying if a grammar is LR(1) by manually building the item sets.
-- **Complexity:** Parsing complexity $O(n^3)$ for any CFG (CYK algorithm), but $O(n)$ for LR/LL grammars.
+- **Complexity:** Parsing complexity $O(n^3)$ for any CFG (CYK algorithm), but $O(n)$ for LR/LL grammars
+
+---
+
+## References
+- [Parsing (Wikipedia)](https://en.wikipedia.org/wiki/Parsing)
+- [Recursive descent parser (Wikipedia)](https://en.wikipedia.org/wiki/Recursive_descent_parser)
+- [LR parser (Wikipedia)](https://en.wikipedia.org/wiki/LR_parser)

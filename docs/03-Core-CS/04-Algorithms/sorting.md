@@ -46,4 +46,9 @@ How many comparisons are made by QuickSort to sort an array of $n$ identical ele
   - The partition will be highly unbalanced ($0$ and $n-1$).
   - Total comparisons = $(n-1) + (n-2) + ... + 1 = \frac{n(n-1)}{2}$.
 - **The "Trap":** Thinking that "identical elements" means $0$ swaps or faster execution. Standard QuickSort still performs the same number of comparisons.
-- **Hard Aspect:** Finding the number of swaps in Bubble Sort or specific behavior of Selection Sort (Selection sort always performs $O(n^2)$ comparisons regardless of input).
+- **Hard Aspect:** Finding the number of swaps in Bubble Sort or specific behavior of Selection Sort (Selection sort always performs $O(n^2)$ comparisons regardless of input)
+
+---
+
+## References
+- [Sorting algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Sorting_algorithm)

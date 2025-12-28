@@ -47,4 +47,11 @@ What is the minimum number of sequence bits for Selective Repeat with window siz
   - $\eta = (1-p) \times (\eta_{ideal})$ where $p$ is probability of frame error.
 - **Complexity:** Binary Exponential Backoff in CSMA/CD.
   - After $n$ collisions, wait for $K \times 512$ bit-times where $K \in [0, 2^n - 1]$.
-  - Max $n$ is 10 (range $[0, 1023]$).
+  - Max $n$ is 10 (range $[0, 1023]$)
+
+---
+
+## References
+- [Data link layer (Wikipedia)](https://en.wikipedia.org/wiki/Data_link_layer)
+- [Sliding window protocol (Wikipedia)](https://en.wikipedia.org/wiki/Sliding_window_protocol)
+- [Carrier-sense multiple access with collision detection (Wikipedia)](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection)

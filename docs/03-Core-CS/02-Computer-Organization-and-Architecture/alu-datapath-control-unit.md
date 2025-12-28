@@ -48,4 +48,10 @@ Calculate the size of control memory for a processor with 128 micro-instructions
   - Branch bits = $7$ bits.
   - Total bits per word = $12 + 7 = 19$.
   - Control Memory Size = $128 \times 19$ bits.
-- **The "Trap":** Forgetting the $+1$ in $log_2(N+1)$. The $+1$ represents the "No-op" state where none of the $N$ signals are active.
+- **The "Trap":** Forgetting the $+1$ in $log_2(N+1)$. The $+1$ represents the "No-op" state where none of the $N$ signals are active
+
+---
+
+## References
+- [Arithmetic logic unit (Wikipedia)](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)
+- [Control unit (Wikipedia)](https://en.wikipedia.org/wiki/Control_unit)

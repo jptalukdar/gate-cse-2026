@@ -54,4 +54,11 @@ A 3-bit synchronous counter is designed for $0 \to 1 \to 2 \to 0$. What happens 
 
 **Frequency Division:**
 In a ripple counter with $n$ flip-flops, the output frequency of the $n$-th FF is $f_{out} = \frac{f_{clk}}{2^n}$.
-For Mod-$N$ counters, $f_{out} = \frac{f_{clk}}{N}$.
+For Mod-$N$ counters, $f_{out} = \frac{f_{clk}}{N}$
+
+---
+
+## References
+- [Sequential logic (Wikipedia)](https://en.wikipedia.org/wiki/Sequential_logic)
+- [Flip-flop (Wikipedia)](https://en.wikipedia.org/wiki/Flip-flop_(electronics))
+- [Counter (digital) (Wikipedia)](https://en.wikipedia.org/wiki/Counter_(digital))

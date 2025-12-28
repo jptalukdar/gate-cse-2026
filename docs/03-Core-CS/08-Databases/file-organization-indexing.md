@@ -39,4 +39,10 @@ Calculate the max order of a B+ tree node given Block Size, Key size, Pointer si
 - **Hard Aspect:** Number of blocks accessed for a query.
   - For an index: $Height + 1$ (for data block access).
 - **Complexity:** Static vs Dynamic Hashing.
-  - Extendible Hashing: Uses a directory. Directory size doubles when a bucket overflows and local depth equals global depth.
+  - Extendible Hashing: Uses a directory. Directory size doubles when a bucket overflows and local depth equals global depth
+
+---
+
+## References
+- [Database index (Wikipedia)](https://en.wikipedia.org/wiki/Database_index)
+- [B+ tree (Wikipedia)](https://en.wikipedia.org/wiki/B%2B_tree)

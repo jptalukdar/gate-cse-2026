@@ -41,4 +41,10 @@ Which layer is responsible for Dialog Control and Token Management?
   - Bridge/Switch: Data Link.
   - Router: Network.
   - Gateway: All layers.
-- **Complexity:** Comparison of OSI and TCP/IP philosophies. (OSI is a reference model, TCP/IP is the implementation).
+- **Complexity:** Comparison of OSI and TCP/IP philosophies. (OSI is a reference model, TCP/IP is the implementation)
+
+---
+
+## References
+- [OSI model (Wikipedia)](https://en.wikipedia.org/wiki/OSI_model)
+- [Internet protocol suite (Wikipedia)](https://en.wikipedia.org/wiki/Internet_protocol_suite)

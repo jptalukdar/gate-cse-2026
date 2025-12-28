@@ -42,3 +42,10 @@ During a DFS, an edge $(u, v)$ is found where $v$ is an ancestor of $u$. What ty
 - **Complexity:** Number of possible BFS/DFS sequences for a given graph.
   - Rule: A BFS sequence must visit all neighbors of a node before moving to neighbors of neighbors.
   - Question: "Which of the following CANNOT be a BFS traversal of this graph?"
+
+---
+
+## References
+- [Graph (abstract data type) (Wikipedia)](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
+- [Breadth-first search (Wikipedia)](https://en.wikipedia.org/wiki/Breadth-first_search)
+- [Depth-first search (Wikipedia)](https://en.wikipedia.org/wiki/Depth-first_search)

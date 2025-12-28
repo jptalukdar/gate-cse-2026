@@ -47,4 +47,10 @@ In a language with nested functions, how does an inner function access a variabl
 - **Complexity:** Code generation logic for specific hardware.
   - Question: "Minimum number of registers needed to evaluate $(a+b)*(c+d)$?"
   - Use **Sethi-Ullman** numbering: Label leaves 1/0, parent is $max(l, r)$ or $max(l, r)+1$ if equal.
-  - For $(a+b)*(c+d)$, label $a, b, c, d$ as 1. $a+b$ is 2, $c+d$ is 2. The root is $2+1 = 3$. Registers needed: **2** (if we can store high results back to memory) or **3**.
+  - For $(a+b)*(c+d)$, label $a, b, c, d$ as 1. $a+b$ is 2, $c+d$ is 2. The root is $2+1 = 3$. Registers needed: **2** (if we can store high results back to memory) or **3**
+
+---
+
+## References
+- [Code generation (compiler) (Wikipedia)](https://en.wikipedia.org/wiki/Code_generation_(compiler))
+- [Call stack (Wikipedia)](https://en.wikipedia.org/wiki/Call_stack)

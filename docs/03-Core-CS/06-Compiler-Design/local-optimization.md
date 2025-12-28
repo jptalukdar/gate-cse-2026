@@ -46,4 +46,10 @@ Is `if(0) { x = 10; }` dead code or unreachable code?
   - In $a = b + c; d = b + c$, the DAG will have only one node for $b+c$.
 - **Hard Aspect:** Identifying the minimum number of instructions after optimization.
   - Question: "The following code can be minimized to how many 3AC instructions?"
-  - Requires manually applying folding, propagation, and common sub-expression elimination.
+  - Requires manually applying folding, propagation, and common sub-expression elimination
+
+---
+
+## References
+- [Optimizing compiler (Wikipedia)](https://en.wikipedia.org/wiki/Optimizing_compiler)
+- [Basic block (Wikipedia)](https://en.wikipedia.org/wiki/Basic_block)

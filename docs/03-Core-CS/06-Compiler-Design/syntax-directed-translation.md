@@ -38,4 +38,9 @@ Can a given SDT be evaluated in a single pass during a Top-Down or Bottom-Up par
   - If actions are only at the end of productions (e.g., $A \to XYZ \{ action \}$), it's a post-fix SDT.
 - **Hard Aspect:** Calculating the values of a complex SDT with both inherited and synthesized attributes.
   - Example: $T \to F T'$, $T' \to * F T'_1$ where values are passed down through $T'$.
-- **Complexity:** Dependency Graphs. A cycle in the dependency graph means the attribute values cannot be computed.
+- **Complexity:** Dependency Graphs. A cycle in the dependency graph means the attribute values cannot be computed
+
+---
+
+## References
+- [Syntax-directed translation (Wikipedia)](https://en.wikipedia.org/wiki/Syntax-directed_translation)

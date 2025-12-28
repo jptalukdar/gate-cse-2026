@@ -51,4 +51,10 @@ Is $L = \{a^n b^m \mid n+m \text{ is even}\}$ regular?
   - $L_2 = \{a^n b^m \mid n=m\}$ is **NOT REGULAR**.
 - **Complexity:** Regularity of languages involving prime numbers.
   - $L = \{a^p \mid p \text{ is prime}\}$ is **NOT REGULAR**.
-  - No regular expression can generate prime sequence gaps.
+  - No regular expression can generate prime sequence gaps
+
+---
+
+## References
+- [Regular language (Wikipedia)](https://en.wikipedia.org/wiki/Regular_language)
+- [Regular expression (Wikipedia)](https://en.wikipedia.org/wiki/Regular_expression)

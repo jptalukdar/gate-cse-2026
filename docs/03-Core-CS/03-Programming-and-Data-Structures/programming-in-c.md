@@ -55,4 +55,9 @@ Given `int a[3][4][5]`, what is the value of `a[1] - a[0]`?
   - In pointer subtraction, the result is the number of elements of the "pointed-to" type between the pointers.
   - Since `a[0]` and `a[1]` are consecutive elements of type `int[4][5]`, the difference is **1**.
 - **The "Trap":** Many students calculate the byte difference ($4 \times 5 \times 4 \text{ bytes} = 80$ bytes). But pointer subtraction scales by the size of the element.
-- **Complexity:** `*(*(*(a+i)+j)+k)` vs `*(*(a+i)+j)`. Understanding where the "pointer" turns into a "value" is crucial.
+- **Complexity:** `*(*(*(a+i)+j)+k)` vs `*(*(a+i)+j)`. Understanding where the "pointer" turns into a "value" is crucial
+
+---
+
+## References
+- [C (programming language) (Wikipedia)](https://en.wikipedia.org/wiki/C_(programming_language))

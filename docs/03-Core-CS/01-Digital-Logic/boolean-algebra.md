@@ -57,4 +57,10 @@ Is the set $\{\oplus, 1\}$ functionally complete?
 - We can get NOT: $\overline{A} = A \oplus 1$.
 - To get AND/OR, we need some way to create a product. XOR is a linear function. $\{ \oplus, 1 \}$ can only generate linear functions (functions of form $a_0 \oplus a_1 x_1 \oplus ...$). 
 - AND is not linear. Therefore, $\{ \oplus, 1 \}$ is **NOT** functionally complete.
-- **Why it's hard:** Many students confuse "Universal Gates" (NAND/NOR) with "Functionally Complete Sets". Identifying non-trivial sets requires checking if they can implement {NOT, AND} or {NOT, OR}.
+- **Why it's hard:** Many students confuse "Universal Gates" (NAND/NOR) with "Functionally Complete Sets". Identifying non-trivial sets requires checking if they can implement {NOT, AND} or {NOT, OR}
+
+---
+
+## References
+- [Boolean algebra (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_algebra)
+- [Logic gate (Wikipedia)](https://en.wikipedia.org/wiki/Logic_gate)

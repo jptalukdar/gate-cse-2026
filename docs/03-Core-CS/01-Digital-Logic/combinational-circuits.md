@@ -50,4 +50,11 @@ Given a $4 \times 1$ MUX with select lines $S_1, S_0$ as $A, B$. Inputs are $I_0
   Since $(A \odot B) = \overline{A \oplus B}$, let $X = A \oplus B$.
   $f = C\overline{X} + \overline{C}X = X \oplus C$
 - **Result:** $f = A \oplus B \oplus C$ (3-variable XOR).
-- **Why it's hard:** Requires identifying the XOR structure within the MUX expansion terms efficiently. Mistakes in Shannon expansion are common.
+- **Why it's hard:** Requires identifying the XOR structure within the MUX expansion terms efficiently. Mistakes in Shannon expansion are common
+
+---
+
+## References
+- [Combinational logic (Wikipedia)](https://en.wikipedia.org/wiki/Combinational_logic)
+- [Multiplexer (Wikipedia)](https://en.wikipedia.org/wiki/Multiplexer)
+- [Adder (electronics) (Wikipedia)](https://en.wikipedia.org/wiki/Adder_(electronics))

@@ -44,4 +44,11 @@ Is $\{ \langle M \rangle \mid M \text{ is a TM and } |L(M)| \ge 2 \}$ recursivel
   - Trivial: Property is true for all RE languages or none.
 - **Complexity:** Post Correspondence Problem (PCP).
   - PCP is undecidable for alphabet size $\ge 2$.
-  - Modified PCP is also undecidable.
+  - Modified PCP is also undecidable
+
+---
+
+## References
+- [Turing machine (Wikipedia)](https://en.wikipedia.org/wiki/Turing_machine)
+- [Undecidable problem (Wikipedia)](https://en.wikipedia.org/wiki/Undecidable_problem)
+- [Rice's theorem (Wikipedia)](https://en.wikipedia.org/wiki/Rice%27s_theorem)

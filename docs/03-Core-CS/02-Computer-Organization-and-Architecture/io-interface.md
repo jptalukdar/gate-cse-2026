@@ -43,4 +43,11 @@ A DMA controller transfers 64-character blocks from a device to memory. The devi
   - Stolen fraction = $1/5 = 0.20$ or $20\%$.
   - CPU Busy time = $100\% - 20\% = 80\%$.
 - **The "Trap":** Sometimes the question mentions "Burst Mode" vs "Cycle Stealing Mode". In Burst Mode, the CPU is stalled for the duration of the *entire* block transfer.
-- **Hard Aspect:** When multiple devices are connected, and you must calculate the aggregate stolen cycles or determine if the bus saturates.
+- **Hard Aspect:** When multiple devices are connected, and you must calculate the aggregate stolen cycles or determine if the bus saturates
+
+---
+
+## References
+- [Input/output (Wikipedia)](https://en.wikipedia.org/wiki/Input/output)
+- [Interrupt (Wikipedia)](https://en.wikipedia.org/wiki/Interrupt)
+- [Direct memory access (Wikipedia)](https://en.wikipedia.org/wiki/Direct_memory_access)
