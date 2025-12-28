@@ -1,0 +1,45 @@
+site_name: Gate CSE 2026 Notes
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep orange
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - General Aptitude:
+      - 01-General-Aptitude/index.md
+      - Verbal: 01-General-Aptitude/01-Verbal-Aptitude/index.md
+      - Quantitative: 01-General-Aptitude/02-Quantitative-Aptitude/index.md
+      - Analytical: 01-General-Aptitude/03-Analytical-Aptitude/index.md
+      - Spatial: 01-General-Aptitude/04-Spatial-Aptitude/index.md
+  - Engineering Mathematics:
+      - 02-Engineering-Mathematics/index.md
+      - Discrete Math: 02-Engineering-Mathematics/01-Discrete-Mathematics/index.md
+      - Linear Algebra: 02-Engineering-Mathematics/02-Linear-Algebra/index.md
+      - Calculus: 02-Engineering-Mathematics/03-Calculus/index.md
+      - Probability & Stats: 02-Engineering-Mathematics/04-Probability-and-Statistics/index.md
+  - Core CS:
+      - 03-Core-CS/index.md
+      - Digital Logic: 03-Core-CS/01-Digital-Logic/index.md
+      - COA: 03-Core-CS/02-Computer-Organization-and-Architecture/index.md
+      - Programming & DS: 03-Core-CS/03-Programming-and-Data-Structures/index.md
+      - Algorithms: 03-Core-CS/04-Algorithms/index.md
+      - TOC: 03-Core-CS/05-Theory-of-Computation/index.md
+      - Compiler Design: 03-Core-CS/06-Compiler-Design/index.md
+      - Operating Systems: 03-Core-CS/07-Operating-Systems/index.md
+      - Databases: 03-Core-CS/08-Databases/index.md
+      - Computer Networks: 03-Core-CS/09-Computer-Networks/index.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
