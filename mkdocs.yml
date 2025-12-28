@@ -35,6 +35,19 @@ nav:
       - Operating Systems: 03-Core-CS/07-Operating-Systems/index.md
       - Databases: 03-Core-CS/08-Databases/index.md
       - Computer Networks: 03-Core-CS/09-Computer-Networks/index.md
+  - ⚡ Cheatsheets:
+      - Engineering Math: 02-Engineering-Mathematics/cheatsheet.md
+      - General Aptitude: 01-General-Aptitude/cheatsheet.md
+      - Core CS:
+          - Digital Logic: 03-Core-CS/01-Digital-Logic/cheatsheet.md
+          - COA: 03-Core-CS/02-Computer-Organization-and-Architecture/cheatsheet.md
+          - Programming & DS: 03-Core-CS/03-Programming-and-Data-Structures/cheatsheet.md
+          - Algorithms: 03-Core-CS/04-Algorithms/cheatsheet.md
+          - TOC: 03-Core-CS/05-Theory-of-Computation/cheatsheet.md
+          - Compiler Design: 03-Core-CS/06-Compiler-Design/cheatsheet.md
+          - OS: 03-Core-CS/07-Operating-Systems/cheatsheet.md
+          - DBMS: 03-Core-CS/08-Databases/cheatsheet.md
+          - CN: 03-Core-CS/09-Computer-Networks/cheatsheet.md
 
 markdown_extensions:
   - pymdownx.arithmatex:
