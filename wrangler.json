@@ -1,5 +1,7 @@
 {
     "name": "gate-cse-2026",
-    "pages_build_output_dir": "site",
+    "assets": {
+        "directory": "./site"
+    },
     "compatibility_date": "2025-12-29"
 }
