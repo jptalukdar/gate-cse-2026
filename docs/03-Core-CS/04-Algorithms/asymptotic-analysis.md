@@ -15,6 +15,7 @@ $1 < \log \log n < \log n < n^{1/k} < n < n \log n < n^k < a^n < n! < n^n$
 
 ### 1. Master Theorem
 For recurrences of the form $T(n) = aT(n/b) + f(n)$:
+
 1. If $f(n) = O(n^c)$ where $c < \log_b a$, then $T(n) = \Theta(n^{\log_b a})$.
 2. If $f(n) = \Theta(n^c)$ where $c = \log_b a$, then $T(n) = \Theta(n^c \log n)$.
 3. If $f(n) = \Omega(n^c)$ where $c > \log_b a$, then $T(n) = \Theta(f(n))$.
@@ -38,6 +39,7 @@ For recurrences of the form $T(n) = aT(n/b) + f(n)$:
 **Topic: Comparison of complex log functions**
 **Tricky Question (GATE 2011/2015):**
 Compare $f(n) = 2^n$ and $g(n) = n^{\log n}$.
+
 - **Analysis:**
   - Take $\log$ on both sides:
   - $\log(f(n)) = n$

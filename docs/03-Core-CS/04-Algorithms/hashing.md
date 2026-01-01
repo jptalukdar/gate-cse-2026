@@ -11,6 +11,7 @@ Hashing maps data of arbitrary size to fixed-size values using a hash function $
 
 ### 1. Load Factor ($\alpha$)
 $\alpha = \frac{\text{Number of elements}}{\text{Table size}}$.
+
 - Chaining: $T_{search} = 1 + \alpha$.
 - Open Addressing: $T_{search} = \frac{1}{1-\alpha}$ (assuming uniform hashing).
 
@@ -24,6 +25,7 @@ $\alpha = \frac{\text{Number of elements}}{\text{Table size}}$.
 ## Example Problems
 
 **Problem:** Insert 11 into a table of size 10 using Linear Probing with $h(x) = x \pmod{10}$.
+
 1. $h(11) = 1$.
 2. If index 1 is full, check index 2.
 **Result:** First available slot among $(1, 2, 3...)$.
@@ -35,6 +37,7 @@ $\alpha = \frac{\text{Number of elements}}{\text{Table size}}$.
 **Topic: Clustering and Search Performance**
 **Tricky Question (GATE 2011/2015/2019):**
 Which collision resolution technique suffers from Primary Clustering?
+
 - **Analysis:** **Linear Probing**. Long runs of occupied slots build up, increasing search time.
 - **The "Trap":** "Search Time in Chaining".
   - Question: "Worst case time for a search in a hash table with $n$ elements using chaining?"

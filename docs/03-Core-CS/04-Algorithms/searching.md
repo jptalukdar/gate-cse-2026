@@ -21,6 +21,7 @@ Locating an element within a data structure.
 ## Example Problems
 
 **Problem:** How many comparisons for Binary Search in an array of 1000 elements?
+
 - $log_2 1000 \approx 10$.
 **Result:** 10.
 
@@ -31,6 +32,7 @@ Locating an element within a data structure.
 **Topic: Binary Search on non-unique elements and range queries**
 **Tricky Question (GATE 2013/2015):**
 Given a sorted array with duplicates, how to find the *first* occurrence of $X$?
+
 - **Analysis:** Standard Binary Search finds *any* occurrence. To find the first, if $A[mid] == X$, you must continue searching in the left half: $high = mid - 1$.
 - **The "Trap":** Binary Search on a **Linked List**.
   - Question: "Complexity of Binary Search on a Sorted Singly Linked List?"

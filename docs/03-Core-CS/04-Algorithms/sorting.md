@@ -15,11 +15,13 @@ Sorting is the arrangement of data in a specific order (ascending/descending).
 
 ### 1. Stability
 A sorting algorithm is **stable** if it preserves the relative order of records with equal keys.
+
 - Stable: Merge, Insertion, Bubble.
 - Unstable: Quick, Heap, Selection.
 
 ### 2. In-place
 Uses $O(1)$ extra space (besides the input).
+
 - In-place: Bubble, Insertion, Selection, Quick (recursive stack excluded), Heap.
 - Not in-place: Merge Sort ($O(n)$ extra space).
 
@@ -31,6 +33,7 @@ Any comparison-based sorting algorithm must take $\Omega(n \log n)$ in the worst
 ## Example Problems
 
 **Problem:** What is the worst-case scenario for QuickSort?
+
 - **Result:** Already sorted or reverse-sorted array when the first/last element is chosen as pivot. The recurrence becomes $T(n) = T(n-1) + O(n)$.
 
 ---
@@ -40,6 +43,7 @@ Any comparison-based sorting algorithm must take $\Omega(n \log n)$ in the worst
 **Topic: QuickSort Pivot Selection and Partition Counts**
 **Tricky Question (GATE 2014/2019):**
 How many comparisons are made by QuickSort to sort an array of $n$ identical elements?
+
 - **Analysis:**
   - Even if elements are identical, the partition process compares each element with the pivot.
   - If pivot is first element, it compares with $n-1$ others.

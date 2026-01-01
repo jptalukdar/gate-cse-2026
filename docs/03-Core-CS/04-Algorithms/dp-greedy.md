@@ -5,10 +5,12 @@ Two major paradignms for optimization problems.
 
 ### Greedy Method
 Makes the locally optimal choice at each step in the hope of finding the global optimum.
+
 - **Applications**: Huffman Coding, Fractional Knapsack, Prim's, Kruskal's, Dijkstra's.
 
 ### Dynamic Programming (DP)
 Solves complex problems by breaking them into simpler subproblems and storing the results (Memoization/Tabulation).
+
 - **Requirements**: Overlapping subproblems, Optimal substructure.
 - **Applications**: 0/1 Knapsack, Matrix Chain Multiplication, LCS, Floyd-Warshall.
 
@@ -28,6 +30,7 @@ Solves complex problems by breaking them into simpler subproblems and storing th
 ## Example Problems
 
 **Problem:** Find Huffman code for probabilities: $A: 0.5, B: 0.25, C: 0.125, D: 0.125$.
+
 1. Combine C and D (0.25).
 2. Combine Result with B (0.5).
 3. Combine Result with A (1.0).
@@ -40,6 +43,7 @@ Solves complex problems by breaking them into simpler subproblems and storing th
 **Topic: Greedy failure in 0/1 Knapsack**
 **Tricky Question (GATE 2011/2016):**
 Can Greedy (based on value/weight ratio) solve the 0/1 Knapsack problem?
+
 - **Analysis:** **NO**. Greedy only works for the **Fractional** Knapsack. In 0/1, avoiding a high-ratio item to fit two slightly lower-ratio items might be better.
 - **The "Trap":** Sometimes the question gives specific weights and values where greedy *happens* to give the optimal answer, and asks if it's "always" optimal.
 - **Hard Aspect:** Identifying the DP recurrence for specific problems.

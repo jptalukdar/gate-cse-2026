@@ -34,6 +34,7 @@ Algorithms designed to solve problems on graph structures.
 ## Example Problems
 
 **Problem:** In Kruskal's, if the edges are already sorted, what is the complexity?
+
 - **Result:** $O(E \alpha(V))$ where $\alpha$ is the inverse Ackermann function (from DSU). Sorting is the bottleneck.
 
 ---
@@ -43,6 +44,7 @@ Algorithms designed to solve problems on graph structures.
 **Topic: MST Unique Edges and Cut Property**
 **Tricky Question (GATE 2015/2018):**
 If a graph has two edges with the same minimum weight, is the MST always unique?
+
 - **Analysis:** No. If multiple edges have the same weight, different choices can lead to different MSTs.
 - **The "Trap":** Sum of weights in MST is always unique even if the MST itself isn't.
 - **Hard Aspect:** Dijkstra's behavior with negative edges.

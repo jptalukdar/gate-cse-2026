@@ -12,14 +12,17 @@
 | **Heap Sort** | $\Omega(n \log n)$| $\Theta(n \log n)$ | $O(n \log n)$ | $O(1)$ | No |
 
 ## Master Theorem
+
 $$T(n) = aT(n/b) + f(n)$$
 Compare $n^{\log_b a}$ vs $f(n)$.
+
 1. **Case 1**: $f(n) = O(n^{\log_b a - \epsilon}) \implies T(n) = \Theta(n^{\log_b a})$
 2. **Case 2**: $f(n) = \Theta(n^{\log_b a}) \implies T(n) = \Theta(n^{\log_b a} \log n)$
    - Extension: If $f(n) = \Theta(n^{\log_b a} \log^k n) \implies T(n) = \Theta(n^{\log_b a} \log^{k+1} n)$ (for $k \ge 0$)
 3. **Case 3**: $f(n) = \Omega(n^{\log_b a + \epsilon}) \implies T(n) = \Theta(f(n))$ (Structure condition required)
 
 ## Graph Algorithms
+
 | Algorithm | Complexity (Adjacency List) | Application |
 | :--- | :--- | :--- |
 | **BFS** | $O(V+E)$ | Shortest Path (Unweighted) |
@@ -31,6 +34,7 @@ Compare $n^{\log_b a}$ vs $f(n)$.
 | **Kruskal's** | $O(E \log E)$ or $O(E \log V)$ | MST |
 
 ## ⚠️ Common Traps
+
 - **Greedy vs DP**: Greedy makes locally optimal choice (e.g., Fractional Knapsack). DP solves all subproblems (e.g., 0/1 Knapsack).
 - **In-Place**: Merge Sort is NOT in-place (requires $O(n)$ aux space).
 - **Quick Sort Worst Case**: Happens when array is already sorted (or reverse sorted) with standard pivot.

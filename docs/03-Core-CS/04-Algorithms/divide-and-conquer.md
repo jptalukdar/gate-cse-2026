@@ -22,6 +22,7 @@ A design paradigm that breaks a problem into smaller independent subproblems of 
 ## Example Problems
 
 **Problem:** Solve $T(n) = T(n-1) + n$ (not divide and conquer, but common in analysis).
+
 - $T(n) = n + (n-1) + (n-2) + ... + 1 = \frac{n(n+1)}{2}$.
 **Result:** $O(n^2)$.
 
@@ -32,6 +33,7 @@ A design paradigm that breaks a problem into smaller independent subproblems of 
 **Topic: Median Finding and Selection**
 **Tricky Question (GATE 2011/2014):**
 What is the complexity of finding the Median of $n$ elements in the worst case?
+
 - **Analysis:** **$O(n)$** using the "Median of Medians" (Deterministic Selection) algorithm.
 - **The "Trap":** Thinking you MUST sort the array first. Sorting takes $O(n \log n)$. $O(n)$ is possible but more complex.
 - **Hard Aspect:** When the "Combine" step is more expensive than the subproblems.
