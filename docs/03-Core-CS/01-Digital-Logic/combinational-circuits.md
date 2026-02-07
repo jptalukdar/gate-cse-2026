@@ -4,6 +4,7 @@
 Combinational circuits are circuits where the output at any time depends only on the present inputs.
 
 ### Core Components
+
 - **Half Adder**: Adds two bits. Sum $S = A \oplus B$, Carry $C = AB$.
 - **Full Adder**: Adds three bits. $S = A \oplus B \oplus C_{in}$, $C_{out} = AB + BC_{in} + AC_{in}$.
 - **Multiplexer (MUX)**: $2^n$ inputs, $n$ selection lines, 1 output. Acts as a data selector.
@@ -12,13 +13,16 @@ Combinational circuits are circuits where the output at any time depends only on
 ## Key Theories & Formulas
 
 ### 1. Multiplexer as a Universal Logic Module
+
 - A $2^n \times 1$ MUX can implement any Boolean function of $n+1$ variables.
 - One variable is used as input (along with 0, 1), and $n$ variables are used as select lines.
 
 ### 2. Decoder with OR Gates
+
 - An $n$-to-$2^n$ decoder followed by OR gates can implement any set of Boolean functions by summing the minterms.
 
 ### 3. Look-Ahead Carry (LAC) Logic
+
 - Reduces carry propagation delay in ripple carry adders.
 - **Generate**: $G_i = A_i B_i$; **Propagate**: $P_i = A_i \oplus B_i$.
 - $C_{i+1} = G_i + P_i C_i$.
@@ -28,6 +32,7 @@ Combinational circuits are circuits where the output at any time depends only on
 ## Example Problems
 
 **Problem:** How many $2 \times 1$ MUX are needed to implement a $16 \times 1$ MUX?
+
 - Level 1: $16/2 = 8$ MUX
 - Level 2: $8/2 = 4$ MUX
 - Level 3: $4/2 = 2$ MUX
@@ -49,12 +54,14 @@ Given a $4 \times 1$ MUX with select lines $S_1, S_0$ as $A, B$. Inputs are $I_0
   $f = C(A \odot B) + \overline{C}(A \oplus B)$
   Since $(A \odot B) = \overline{A \oplus B}$, let $X = A \oplus B$.
   $f = C\overline{X} + \overline{C}X = X \oplus C$
+
 - **Result:** $f = A \oplus B \oplus C$ (3-variable XOR).
 - **Why it's hard:** Requires identifying the XOR structure within the MUX expansion terms efficiently. Mistakes in Shannon expansion are common
 
 ---
 
 ## References
+
 - [Combinational logic (Wikipedia)](https://en.wikipedia.org/wiki/Combinational_logic)
 - [Multiplexer (Wikipedia)](https://en.wikipedia.org/wiki/Multiplexer)
 - [Adder (electronics) (Wikipedia)](https://en.wikipedia.org/wiki/Adder_(electronics))

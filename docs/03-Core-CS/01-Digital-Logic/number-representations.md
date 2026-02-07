@@ -4,6 +4,7 @@
 Number systems define how values are stored in binary. GATE focuses heavily on signed integers and floating-point representations.
 
 ### Integer Representations ($n$ bits)
+
 - **Unsigned**: Range $[0, 2^n - 1]$.
 - **Signed Magnitude**: Range $[-(2^{n-1} - 1), 2^{n-1} - 1]$. Two representations for zero (+0 and -0).
 - **1's Complement**: Range $[-(2^{n-1} - 1), 2^{n-1} - 1]$. Two representations for zero.
@@ -13,9 +14,11 @@ Number systems define how values are stored in binary. GATE focuses heavily on s
 
 ### 1. Overflow Detection in 2's Complement
 Overflow occurs when adding two numbers of the same sign results in a different sign.
+
 - **Hardware Logic**: $Overflow = C_{n} \oplus C_{n-1}$ (Carry into MSB XOR Carry out of MSB).
 
 ### 2. IEEE 754 Floating Point (Single Precision - 32 bits)
+
 - **Sign Bit (1 bit)**: 0 for +, 1 for -.
 - **Exponent (8 bits)**: Biased by 127. Store $E + 127$.
 - **Mantissa (23 bits)**: Normalized form $1.M$. Only the fractional part $M$ is stored (Hidden bit '1').
@@ -26,12 +29,14 @@ Overflow occurs when adding two numbers of the same sign results in a different 
 ## Example Problems
 
 **Problem:** Represent -5 in 8-bit 2's complement.
+
 1. Binary of +5: `0000 0101`
 2. 1's complement: `1111 1010`
 3. Add 1 for 2's complement: `1111 1011`
 **Result:** `0xFB`
 
 **Problem:** What is the range of 8-bit 2's complement?
+
 - Min: $-2^7 = -128$
 - Max: $2^7 - 1 = 127$
 
@@ -42,6 +47,7 @@ Overflow occurs when adding two numbers of the same sign results in a different 
 **Topic: IEEE 754 Precision and Min/Max values**
 **Tricky Question (GATE 2018):**
 Consider a floating-point system with 1 bit sign, 3 bit biased exponent (bias=3), and 2 bit mantissa. What is the smallest positive normalized number?
+
 - **Analysis:**
   - Smallest normalized number has Exponent = 1 (actual exponent $E = 1 - 3 = -2$).
   - Mantissa is $1.00_b$ (hidden bit is 1, fraction is 00).
@@ -53,5 +59,6 @@ Consider a floating-point system with 1 bit sign, 3 bit biased exponent (bias=3)
 ---
 
 ## References
+
 - [Signed number representations (Wikipedia)](https://en.wikipedia.org/wiki/Signed_number_representations)
 - [IEEE 754 (Wikipedia)](https://en.wikipedia.org/wiki/IEEE_754)

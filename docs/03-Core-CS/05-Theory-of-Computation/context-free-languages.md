@@ -16,12 +16,14 @@ Context-Free Languages (CFL) are recognized by Pushdown Automata (PDA) and gener
 
 ### 1. Ambiguity in Grammar
 A CFG is ambiguous if there exists at least one string that has:
+
 - More than one Parse Tree.
 - More than one Leftmost Derivation.
 - More than one Rightmost Derivation.
 *Note:* Checking if a CFG is ambiguous is **undecidable**.
 
 ### 2. Normal Forms
+
 - **Chomsky Normal Form (CNF)**: $A \to BC$ or $A \to a$.
 - **Greibach Normal Form (GNF)**: $A \to a \alpha$.
 
@@ -30,6 +32,7 @@ A CFG is ambiguous if there exists at least one string that has:
 ## Example Problems
 
 **Problem:** Is $L = \{a^n b^n \mid n \ge 0\}$ a CFL?
+
 - **Analysis:** Yes. It can be recognized by a PDA that pushes $a$s and pops them for $b$s.
 - **Grammar:** $S \to aSb \mid \epsilon$.
 
@@ -40,6 +43,7 @@ A CFG is ambiguous if there exists at least one string that has:
 **Topic: Deterministic CFL (DCFL) vs CFL**
 **Tricky Question (GATE 2014/2017):**
 Is the language $L = \{ww^R \mid w \in \{a, b\}^*\}$ a DCFL?
+
 - **Analysis:** **NO**. It is a CFL, but not a DCFL. A NPDA is needed to guess where the string $w$ ends and its reverse $w^R$ begins.
 - **The "Trap":** $L = \{wcw^R\}$ is a **DCFL** because the marker 'c' tells the machine when to start popping.
 - **Hard Aspect:** Intersection logic. 
@@ -51,5 +55,6 @@ Is the language $L = \{ww^R \mid w \in \{a, b\}^*\}$ a DCFL?
 ---
 
 ## References
+
 - [Context-free language (Wikipedia)](https://en.wikipedia.org/wiki/Context-free_language)
 - [Context-free grammar (Wikipedia)](https://en.wikipedia.org/wiki/Context-free_grammar)

@@ -4,16 +4,19 @@
 Locating an element within a data structure.
 
 ### Basic Algorithms
+
 - **Linear Search**: $O(n)$. Works on unsorted data.
 - **Binary Search**: $O(\log n)$. Requires sorted data and random access (array).
 
 ## Key Theories & Formulas
 
 ### 1. Binary Search Comparisons
+
 - Max comparisons: $\lfloor log_2 n \rfloor + 1$.
 - Average comparisons: $\approx log_2 n$.
 
 ### 2. Searching in Matrices
+
 - In a sorted $M \times N$ matrix (rows and columns sorted), we can search in $O(M+N)$.
 
 ---
@@ -44,5 +47,6 @@ Given a sorted array with duplicates, how to find the *first* occurrence of $X$?
 ---
 
 ## References
+
 - [Search algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Search_algorithm)
 - [Binary search algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Binary_search_algorithm)

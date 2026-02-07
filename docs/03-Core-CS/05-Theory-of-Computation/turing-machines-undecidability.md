@@ -21,6 +21,7 @@ The problem of determining whether a TM $M$ will halt on input $w$ is **undecida
 
 ### 2. Rice's Theorem
 Every non-trivial property of the **languages** recognized by TMs is undecidable.
+
 - "Is $L(M)$ empty?" - Undecidable.
 - "Is $M$ starting with 5 states?" - **Decidable** (it's a property of the machine, not its language).
 
@@ -29,6 +30,7 @@ Every non-trivial property of the **languages** recognized by TMs is undecidable
 ## Example Problems
 
 **Problem:** Is it decidable if a Regular Language is finite?
+
 - **Result:** **YES**. All properties of Regular languages are decidable.
 
 ---
@@ -38,6 +40,7 @@ Every non-trivial property of the **languages** recognized by TMs is undecidable
 **Topic: Decidability Table (The "Master Chart")**
 **Tricky Question (GATE 2013/2016/2020):**
 Is $\{ \langle M \rangle \mid M \text{ is a TM and } |L(M)| \ge 2 \}$ recursively enumerable?
+
 - **Analysis:** **YES**. We can non-deterministically guess two different strings and run $M$ on them. If both halt/accept, we accept. 
 - **The "Trap":** Checking if it is **Recursive**. It's not. If $M$ recognizes a language with only 1 string, we might loop forever.
 - **Hard Aspect:** Identifying "Trivial" vs "Non-trivial" in Rice's Theorem.
@@ -49,6 +52,7 @@ Is $\{ \langle M \rangle \mid M \text{ is a TM and } |L(M)| \ge 2 \}$ recursivel
 ---
 
 ## References
+
 - [Turing machine (Wikipedia)](https://en.wikipedia.org/wiki/Turing_machine)
 - [Undecidable problem (Wikipedia)](https://en.wikipedia.org/wiki/Undecidable_problem)
 - [Rice's theorem (Wikipedia)](https://en.wikipedia.org/wiki/Rice%27s_theorem)

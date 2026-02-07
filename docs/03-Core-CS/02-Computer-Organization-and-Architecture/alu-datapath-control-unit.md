@@ -4,11 +4,13 @@
 This topic covers the internal structure of the Processor.
 
 ### Components
+
 - **ALU (Arithmetic Logic Unit)**: Performs calculations and logical operations.
 - **Datapath**: The pathway (buses, registers) where data flows between CPU components.
 - **Control Unit (CU)**: Directs the operation of the processor. It tells the datapath what to do.
 
 ### Control Unit Types
+
 - **Hardwired**: Uses logic gates, flip-flops. Fixed, fast, but difficult to modify.
 - **Microprogrammed**: Stores control signals in a "Control Memory" (ROM) as microinstructions. Slower but flexible.
 
@@ -16,6 +18,7 @@ This topic covers the internal structure of the Processor.
 
 ### 1. Control Memory (ROM) Size
 Size = (Number of microinstructions) $\times$ (Length of microinstruction).
+
 - **Horizontal Microprogramming**: Many control bits (unencoded). High parallelism, large memory.
 - **Vertical Microprogramming**: Encoded bits (require decoders). Smaller memory, slower.
 
@@ -27,6 +30,7 @@ If a group of $N$ control signals are **mutually exclusive** (never active toget
 ## Example Problems
 
 **Problem:** A processor has 64 distinct control signals. If they are all active together (worst case), how many bits are needed for horizontal microprogramming?
+
 - **Result:** 64 bits.
 - If they are grouped into 8 mutually exclusive groups of 7 signals each:
   - Each group needs $log_2(7+1) = 3$ bits.
@@ -39,6 +43,7 @@ If a group of $N$ control signals are **mutually exclusive** (never active toget
 **Topic: Micro-instruction Sequencing**
 **Tricky Question (GATE 2005/2016):**
 Calculate the size of control memory for a processor with 128 micro-instructions, each requiring 20 control signals and a 7-bit branch address. Control signals are grouped into 4 groups of size 5, 4, 6, and 5 respectively (mutually exclusive within groups).
+
 - **Analysis:**
   - Group 1 (5): $log_2(5+1) \uparrow = 3$ bits.
   - Group 2 (4): $log_2(4+1) \uparrow = 3$ bits.
@@ -53,5 +58,6 @@ Calculate the size of control memory for a processor with 128 micro-instructions
 ---
 
 ## References
+
 - [Arithmetic logic unit (Wikipedia)](https://en.wikipedia.org/wiki/Arithmetic_logic_unit)
 - [Control unit (Wikipedia)](https://en.wikipedia.org/wiki/Control_unit)

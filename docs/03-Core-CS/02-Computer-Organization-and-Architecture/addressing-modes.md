@@ -4,6 +4,7 @@
 Addressing modes specify how the operand of an instruction is located.
 
 ### Common Modes
+
 - **Implied/Implicit**: Operand is hidden in instruction (e.g., `CLS`, `CMA`).
 - **Immediate**: Operand is part of instruction (e.g., `MOV R1, #5`).
 - **Register**: Operand is in a register (e.g., `MOV R1, R2`).
@@ -19,10 +20,12 @@ Addressing modes specify how the operand of an instruction is located.
 
 ### 1. Effective Address (EA)
 The actual memory address where the data is stored.
+
 - Direct: $EA = Address\_in\_Instruction$.
 - Indirect: $EA = Memory[Address\_in\_Instruction]$.
 
 ### 2. Instruction Cycles
+
 - **Immediate**: Fastest (no memory access for operand).
 - **Indirect**: Slowest (two memory accesses: one for pointer, one for data).
 
@@ -31,6 +34,7 @@ The actual memory address where the data is stored.
 ## Example Problems
 
 **Problem:** Match the addressing mode with the typical usage:
+
 - Pointer/Variable: **Direct/Indirect**
 - Array Access: **Indexed**
 - Constant values: **Immediate**
@@ -44,6 +48,7 @@ The actual memory address where the data is stored.
 **Topic: Memory Access Count in Complex Pointers**
 **Tricky Question (GATE 2015):**
 An instruction `LOAD R1, @(R2)` uses indirect addressing through a pointer stored in R2. How many memory accesses are needed to execute this instruction (including fetch)?
+
 - **Analysis:**
   1. **Instruction Fetch**: $1$ memory access (assuming 1 word instruction).
   2. **Operand Address Fetch**: R2 holds the address $A$. Memory at address $A$ holds the operand address $B$. So, $1$ memory access to read $B$.
@@ -55,4 +60,5 @@ An instruction `LOAD R1, @(R2)` uses indirect addressing through a pointer store
 ---
 
 ## References
+
 - [Addressing mode (Wikipedia)](https://en.wikipedia.org/wiki/Addressing_mode)

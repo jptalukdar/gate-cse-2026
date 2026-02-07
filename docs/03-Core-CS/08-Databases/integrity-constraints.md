@@ -4,6 +4,7 @@
 Rules enforced on data to maintain quality and correctness.
 
 ### Types
+
 - **Entity Integrity**: Primary key cannot be NULL.
 - **Referential Integrity**: Foreign key must match a primary key in referenced table or be NULL.
 - **Domain Integrity**: Values must fall within a defined set/range.
@@ -11,6 +12,7 @@ Rules enforced on data to maintain quality and correctness.
 ## Key Theories & Formulas
 
 ### 1. Key Constraints
+
 - **Super Key**: Set of attributes that uniquely identifies a tuple.
 - **Candidate Key**: Minimal super key.
 - **Primary Key**: Selected candidate key.
@@ -20,6 +22,7 @@ Rules enforced on data to maintain quality and correctness.
 ## Example Problems
 
 **Problem:** Can a foreign key be part of a primary key in the same table?
+
 - **Result:** **YES**. This is common in weak entities or self-referencing tables.
 
 ---
@@ -29,6 +32,7 @@ Rules enforced on data to maintain quality and correctness.
 **Topic: On Delete/Update Actions**
 **Tricky Question (GATE 2011/2014):**
 If table $S$ references $R$ with `ON DELETE CASCADE`, what happens when a row in $R$ is deleted?
+
 - **Analysis:** All rows in $S$ that point to the deleted row in $R$ are also deleted.
 - **The "Trap":** `SET NULL` vs `RESTRICT`. 
   - `RESTRICT` prevents deletion of $R$ if $S$ references it.
@@ -40,5 +44,6 @@ If table $S$ references $R$ with `ON DELETE CASCADE`, what happens when a row in
 ---
 
 ## References
+
 - [Data integrity (Wikipedia)](https://en.wikipedia.org/wiki/Data_integrity)
 - [Referential integrity (Wikipedia)](https://en.wikipedia.org/wiki/Referential_integrity)

@@ -4,6 +4,7 @@
 Boolean algebra is the branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively.
 
 ### Basic Logic Gates
+
 - **AND**: Output is 1 only if all inputs are 1. ($Y = A \cdot B$)
 - **OR**: Output is 1 if any input is 1. ($Y = A + B$)
 - **NOT**: Inverts the input. ($Y = \overline{A}$)
@@ -15,16 +16,19 @@ Boolean algebra is the branch of algebra in which the values of the variables ar
 ## Key Theories & Formulas
 
 ### 1. Basic Identities
+
 - **Idempotent Law**: $A+A = A$; $A \cdot A = A$
 - **Identity Law**: $A+0 = A$; $A \cdot 1 = A$
 - **Null Law**: $A+1 = 1$; $A \cdot 0 = 0$
 - **Distributive Law**: $A+(BC) = (A+B)(A+C)$  *(Extremely important for GATE)*
 
 ### 2. De Morgan's Theorems
+
 - $\overline{A+B} = \overline{A} \cdot \overline{B}$
 - $\overline{A \cdot B} = \overline{A} + \overline{B}$
 
 ### 3. Consensus Theorem
+
 - $AB + \overline{A}C + BC = AB + \overline{A}C$
 - $(A+B)(\overline{A}+C)(B+C) = (A+B)(\overline{A}+C)$
 
@@ -62,5 +66,6 @@ Is the set $\{\oplus, 1\}$ functionally complete?
 ---
 
 ## References
+
 - [Boolean algebra (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_algebra)
 - [Logic gate (Wikipedia)](https://en.wikipedia.org/wiki/Logic_gate)

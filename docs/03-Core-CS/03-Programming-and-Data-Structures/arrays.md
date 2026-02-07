@@ -10,6 +10,7 @@ Base Address ($BA$) + (Index * Size of Element).
 
 ### 1. 2D Array Address Mapping
 Given `A[m][n]` where $m$ is rows, $n$ is columns.
+
 - **Row Major Order (RMO)**: Rows are stored one after another.
   - $Address(A[i][j]) = BA + [i \times n + j] \times Size$
 - **Column Major Order (CMO)**: Columns are stored one after another.
@@ -20,6 +21,7 @@ Given `A[m][n]` where $m$ is rows, $n$ is columns.
 ## Example Problems
 
 **Problem:** Given `int A[10][20]` starting at address 1000. Each `int` is 4 bytes. Find address of `A[5][10]` in RMO.
+
 - $i=5, j=10, n=20$ (columns).
 - $Address = 1000 + (5 \times 20 + 10) \times 4$
 - $Address = 1000 + (110) \times 4 = 1000 + 440 = 1440$.
@@ -31,6 +33,7 @@ Given `A[m][n]` where $m$ is rows, $n$ is columns.
 **Topic: Non-zero Indexing and Multi-dimensional Mapping**
 **Tricky Question (GATE 2013):**
 An array `A[-5...5][-10...10]` is stored in Row Major Order. Find the index calculation formula for `A[i][j]`.
+
 - **Analysis:**
   - Row range: Lower bound $L_1 = -5$, Upper bound $U_1 = 5 \implies$ Count = $5 - (-5) + 1 = 11$.
   - Column range: $L_2 = -10, U_2 = 10 \implies$ Count $n = 10 - (-10) + 1 = 21$.
@@ -43,4 +46,5 @@ An array `A[-5...5][-10...10]` is stored in Row Major Order. Find the index calc
 ---
 
 ## References
+
 - [Array data structure (Wikipedia)](https://en.wikipedia.org/wiki/Array_data_structure)

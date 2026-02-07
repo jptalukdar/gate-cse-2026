@@ -4,6 +4,7 @@
 C is a procedural programming language. For GATE, focus is on pointers, scope, storage classes, and operator precedence.
 
 ### Key Concepts
+
 - **Storage Classes**: `auto`, `extern`, `static`, `register`.
   - `static`: Variables retain value between function calls.
 - **Pointers**: Variables that store memory addresses. `*p` is value at address; `&x` is address of variable.
@@ -16,6 +17,7 @@ C is a procedural programming language. For GATE, focus is on pointers, scope, s
 If `p` is a pointer to type `T`, then `p + 1` increments the address by `sizeof(T)` bytes.
 
 ### 2. Parameter Passing
+
 - **Call by Value**: Local copy is modified; actual arguments remain unchanged.
 - **Call by Reference**: Address is passed; actual arguments are modified.
 - *Note:* C only supports call-by-value, but passing a pointer simulates call-by-reference.
@@ -38,6 +40,7 @@ int main() {
     printf("%d", a);
 }
 ```
+
 1.  **First call**: `static a` (local to `f`) becomes $5 + 10 = 15$. Global `a` becomes 15.
 2.  **Second call**: `static a` is 15. It becomes $15 + 15 = 30$. Global `a` becomes 30.
 **Result:** 30.
@@ -49,6 +52,7 @@ int main() {
 **Topic: Multi-dimensional Arrays and Pointer Decay**
 **Tricky Question (GATE 2011/2016):**
 Given `int a[3][4][5]`, what is the value of `a[1] - a[0]`?
+
 - **Analysis:**
   - `a` is an array of 3 elements, where each element is a $4 \times 5$ array.
   - `a[0]` and `a[1]` are pointers to $4 \times 5$ arrays.
@@ -60,4 +64,5 @@ Given `int a[3][4][5]`, what is the value of `a[1] - a[0]`?
 ---
 
 ## References
+
 - [C (programming language) (Wikipedia)](https://en.wikipedia.org/wiki/C_(programming_language))

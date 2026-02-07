@@ -4,17 +4,20 @@
 Algorithms designed to solve problems on graph structures.
 
 ### Categories
+
 - **Shortest Path**: Dijkstra, Bellman-Ford, Floyd-Warshall.
 - **Minimum Spanning Tree (MST)**: Prim's, Kruskal's.
 
 ## Key Theories & Formulas
 
 ### 1. Minimum Spanning Tree (MST)
+
 - **Kruskal's**: $O(E \log E)$. Uses Disjoint Set Union (DSU). Greedy.
 - **Prim's**: $O(E \log V)$. Greedy.
 - *Property:* If all edge weights are unique, the MST is unique.
 
 ### 2. Shortest Path Algorithms
+
 - **Dijkstra**: $O((V+E)\log V)$. Unweighted/Positive weights.
 - **Bellman-Ford**: $O(VE)$. Handles negative weights. Detects negative cycles.
 - **Floyd-Warshall**: $O(V^3)$. All-pairs shortest path.
@@ -55,6 +58,7 @@ If a graph has two edges with the same minimum weight, is the MST always unique?
 ---
 
 ## References
+
 - [Dijkstra's algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 - [Prim's algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
 - [Kruskal's algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)

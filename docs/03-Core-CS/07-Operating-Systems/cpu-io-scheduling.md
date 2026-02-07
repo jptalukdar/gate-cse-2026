@@ -4,6 +4,7 @@
 Selection of which process in the ready queue gets the CPU.
 
 ### Algorithms
+
 - **FCFS**: Non-preemptive. Suffers from Convoy Effect.
 - **SJF**: Shortest Job First. Optimal for average waiting time.
 - **SRTF**: Shortest Remaining Time First (Preemptive SJF).
@@ -13,6 +14,7 @@ Selection of which process in the ready queue gets the CPU.
 ## Key Theories & Formulas
 
 ### 1. Metrics
+
 - **Arrival Time ($AT$)**
 - **Burst Time ($BT$)**
 - **Completion Time ($CT$)**
@@ -25,6 +27,7 @@ Selection of which process in the ready queue gets the CPU.
 ## Example Problems
 
 **Problem:** RR with time quantum 2. Processes: P1(BT=5), P2(BT=3).
+
 - 0-2: P1 (rem 3)
 - 2-4: P2 (rem 1)
 - 4-6: P1 (rem 1)
@@ -39,6 +42,7 @@ Selection of which process in the ready queue gets the CPU.
 **Topic: Context Switch Overhead and Adaptive Scheduling**
 **Tricky Question (GATE 2012/2015/2019):**
 In RR, if context switch time is $C$ and time quantum is $Q$, what is the percentage of CPU wasted if $BT \gg Q$?
+
 - **Analysis:**
   - Every $Q$ work, we spend $C$ switching.
   - Overhead = $\frac{C}{Q+C} \times 100$.
@@ -50,4 +54,5 @@ In RR, if context switch time is $C$ and time quantum is $Q$, what is the percen
 ---
 
 ## References
+
 - [Scheduling (computing) (Wikipedia)](https://en.wikipedia.org/wiki/Scheduling_(computing))

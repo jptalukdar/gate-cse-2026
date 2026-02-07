@@ -4,6 +4,7 @@
 Hashing maps data of arbitrary size to fixed-size values using a hash function $h(x)$.
 
 ### Collision Resolution
+
 - **Chaining**: Use linked lists at each hash index.
 - **Open Addressing**: Find another empty slot (Linear Probing, Quadratic Probing, Double Hashing).
 
@@ -16,6 +17,7 @@ $\alpha = \frac{\text{Number of elements}}{\text{Table size}}$.
 - Open Addressing: $T_{search} = \frac{1}{1-\alpha}$ (assuming uniform hashing).
 
 ### 2. Probing Formulas
+
 - Linear: $h(x, i) = (h(x) + i) \pmod m$
 - Quadratic: $h(x, i) = (h(x) + c_1 i + c_2 i^2) \pmod m$
 - Double: $h(x, i) = (h_1(x) + i \cdot h_2(x)) \pmod m$
@@ -49,5 +51,6 @@ Which collision resolution technique suffers from Primary Clustering?
 ---
 
 ## References
+
 - [Hash function (Wikipedia)](https://en.wikipedia.org/wiki/Hash_function)
 - [Hash table (Wikipedia)](https://en.wikipedia.org/wiki/Hash_table)

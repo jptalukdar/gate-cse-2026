@@ -4,6 +4,7 @@
 Responsible for node-to-node delivery, error control, and flow control.
 
 ### Flow Control
+
 - **Stop-and-Wait**: Send one frame, wait for ACK.
 - **Sliding Window**: Send multiple frames.
   - Go-Back-N (GBN)
@@ -13,12 +14,14 @@ Responsible for node-to-node delivery, error control, and flow control.
 
 ### 1. Efficiency ($\eta$)
 $\eta = \frac{T_{trans}}{T_{trans} + 2 T_{prop}}$
+
 - Let $a = T_{prop} / T_{trans}$.
 - **Stop-and-Wait**: $\eta = 1 / (1 + 2a)$.
 - **Sliding Window**: $\eta = W / (1 + 2a)$ (where $W$ is window size).
 
 ### 2. CSMA/CD (Ethernet)
 Used for collision detection in shared channels.
+
 - **Minimum Frame Size ($L$)**: $L \ge 2 \times T_{prop} \times B$ (where $B$ is bandwidth).
 - $T_{trans} \ge 2 \times T_{prop}$.
 
@@ -27,6 +30,7 @@ Used for collision detection in shared channels.
 ## Example Problems
 
 **Problem:** A 1 Mbps link has $T_{prop} = 25$ ms. Frame size is 1000 bits. Find efficiency of Stop-and-Wait.
+
 1. $T_{trans} = 1000 / 10^6 = 1$ ms.
 2. $a = 25 / 1 = 25$.
 3. $\eta = 1 / (1 + 2 \times 25) = 1/51 \approx 2\%$.
@@ -38,6 +42,7 @@ Used for collision detection in shared channels.
 **Topic: Window Size and Sequence Numbers**
 **Tricky Question (GATE 2011/2013/2016):**
 What is the minimum number of sequence bits for Selective Repeat with window size $W$?
+
 - **Analysis:** $Max\_Seq\_No \ge 2W$. 
 - **Bits** = $\lceil log_2(2W) \rceil$.
 - **The "Trap":** GBN vs SR window sizes.
@@ -52,6 +57,7 @@ What is the minimum number of sequence bits for Selective Repeat with window siz
 ---
 
 ## References
+
 - [Data link layer (Wikipedia)](https://en.wikipedia.org/wiki/Data_link_layer)
 - [Sliding window protocol (Wikipedia)](https://en.wikipedia.org/wiki/Sliding_window_protocol)
 - [Carrier-sense multiple access with collision detection (Wikipedia)](https://en.wikipedia.org/wiki/Carrier-sense_multiple_access_with_collision_detection)

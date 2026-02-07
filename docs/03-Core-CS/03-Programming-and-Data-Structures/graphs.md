@@ -4,16 +4,19 @@
 A graph consists of vertices ($V$) and edges ($E$).
 
 ### Representations
+
 - **Adjacency Matrix**: $V \times V$ matrix. Good for dense graphs. Space: $O(V^2)$.
 - **Adjacency List**: Array of lists. Good for sparse graphs. Space: $O(V + E)$.
 
 ## Key Theories & Formulas
 
 ### 1. BFS vs DFS
+
 - **BFS (Breadth-First Search)**: Uses a **Queue**. Finds the shortest path in an unweighted graph.
 - **DFS (Depth-First Search)**: Uses a **Stack** (or recursion). Used for cycle detection, topological sort.
 
 ### 2. Connected Components
+
 - **Directed Graph**: Strongly Connected if path exists between every pair $(u, v)$ in both directions.
 - **Undirected Graph**: Connected if path exists between every pair.
 
@@ -22,6 +25,7 @@ A graph consists of vertices ($V$) and edges ($E$).
 ## Example Problems
 
 **Problem:** Find the space complexity of an adjacency matrix for a graph with 100 vertices.
+
 - Matrix size: $100 \times 100 = 10,000$ entries.
 - Space: $O(V^2)$.
 
@@ -32,6 +36,7 @@ A graph consists of vertices ($V$) and edges ($E$).
 **Topic: BFS/DFS Edge Classification**
 **Tricky Question (GATE 2014/15/21):**
 During a DFS, an edge $(u, v)$ is found where $v$ is an ancestor of $u$. What type of edge is this?
+
 - **Analysis:** **Back Edge**.
 - Types:
   - **Tree Edge**: Part of the DFS tree.
@@ -46,6 +51,7 @@ During a DFS, an edge $(u, v)$ is found where $v$ is an ancestor of $u$. What ty
 ---
 
 ## References
+
 - [Graph (abstract data type) (Wikipedia)](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
 - [Breadth-first search (Wikipedia)](https://en.wikipedia.org/wiki/Breadth-first_search)
 - [Depth-first search (Wikipedia)](https://en.wikipedia.org/wiki/Depth-first_search)

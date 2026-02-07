@@ -4,6 +4,7 @@
 Helper protocols that enable the functionality of the Network layer.
 
 ### Protocols
+
 - **ARP (Address Resolution Protocol)**: Resolve IPv4 $\to$ MAC. (Broadcast request, Unicast reply).
 - **DHCP (Dynamic Host Configuration Protocol)**: Assigns IP addresses dynamically. (DORA process).
 - **ICMP (Internet Control Message Protocol)**: Error reporting and queries (Ping, Traceroute).
@@ -22,6 +23,7 @@ Stores resolved MAC addresses for a limited time to reduce broadcast overhead.
 ## Example Problems
 
 **Problem:** How does a node find the MAC address of its default gateway?
+
 - **Result:** Uses ARP with the gateway's IP address.
 
 ---
@@ -31,6 +33,7 @@ Stores resolved MAC addresses for a limited time to reduce broadcast overhead.
 **Topic: ARP Across Multiple Subnets**
 **Tricky Question (GATE 2012/2015/2018):**
 If Host A in Subnet 1 wants to send a packet to Host B in Subnet 2, whose MAC address does Host A request in the ARP broadcast?
+
 - **Analysis:** **MAC of the Router (Default Gateway)**. Host A realizes B is in a different network and sends the frame to the router.
 - **The "Trap":** "Gratuitous ARP". 
   - Used for duplicate IP detection or updating caches when a MAC changes.
@@ -42,6 +45,7 @@ If Host A in Subnet 1 wants to send a packet to Host B in Subnet 2, whose MAC ad
 ---
 
 ## References
+
 - [Address Resolution Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
 - [Internet Control Message Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol)
 - [Dynamic Host Configuration Protocol (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)

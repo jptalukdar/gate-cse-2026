@@ -17,11 +17,13 @@ Solves complex problems by breaking them into simpler subproblems and storing th
 ## Key Theories & Formulas
 
 ### 1. Huffman Coding
+
 - Goal: Minimum length prefix codes.
 - Complexity: $O(n \log n)$.
 - Average bits per character = $\sum (P_i \times L_i)$.
 
 ### 2. Matrix Chain Multiplication
+
 - Complexity: $O(n^3)$.
 - Number of ways to parenthesize: Catalan Number $C_n$.
 
@@ -54,5 +56,6 @@ Can Greedy (based on value/weight ratio) solve the 0/1 Knapsack problem?
 ---
 
 ## References
+
 - [Dynamic programming (Wikipedia)](https://en.wikipedia.org/wiki/Dynamic_programming)
 - [Greedy algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Greedy_algorithm)

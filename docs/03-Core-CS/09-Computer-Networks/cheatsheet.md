@@ -1,6 +1,7 @@
 # ⚡ Cheatsheet: Computer Networks
 
 ## Delays
+
 - **Transmission ($T_t$)**: $L / B$ (Length / Bandwidth).
 - **Propagation ($T_p$)**: $Distance / Speed$.
 - **Round Trip Time (RTT)**: $2 \times T_p$.
@@ -12,9 +13,11 @@
 | **Stop & Wait** | $\frac{1}{1+2a}$ | $1, 1$ |
 | **GBN** | $\frac{N}{1+2a}$ | $N, 1$ |
 | **SR** | $\frac{N}{1+2a}$ | $N, N$ |
+
 - Here $a = T_p / T_t$. Max throughput = Efficiency $\times$ Bandwidth.
 
 ## IP Addressing (IPv4)
+
 - **Class A**: 0... (NetID: 8 bits)
 - **Class B**: 10... (NetID: 16 bits)
 - **Class C**: 110... (NetID: 24 bits)
@@ -22,6 +25,7 @@
 - **CIDR**: /24 means 24 bits Network, 8 bits Host (254 hosts).
 
 ## TCP/UDP
+
 - **TCP Header**: Min 20 Bytes, Max 60 Bytes.
 - **UDP Header**: 8 Bytes (Source Port, Dest Port, Len, Checksum).
 - **Sequence Numbers**: Byte-stream based. $Ack \# = Next Expected Byte$.
@@ -31,6 +35,7 @@
   - Threshold: On timeout, $Threshold = CWND/2$, $CWND = 1$.
 
 ## ⚠️ Common Traps
+
 - **Bandwidth-Delay Product**: $B \times RTT$. Amount of data "in flight". Vital for window sizing.
 - **Manchester Encoding**: Used in Ethernet. Baud rate = $2 \times$ Bit rate.
 - **Fragment Offset**: Measured in 8-byte blocks. $Offset = 100 \implies 800$ bytes skipped.

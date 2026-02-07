@@ -4,6 +4,7 @@
 A Pushdown Automaton (PDA) is a finite automaton with an additional **Stack** for infinite memory (LIFO). 
 
 ### Acceptance Criteria
+
 1. **Final State Acceptance**: The machine reaches a final state.
 2. **Empty Stack Acceptance**: The stack becomes empty.
 *Note:* Both methods are equivalent for Non-deterministic PDAs (NPDA).
@@ -11,12 +12,14 @@ A Pushdown Automaton (PDA) is a finite automaton with an additional **Stack** fo
 ## Key Theories & Formulas
 
 ### 1. NPDA vs DPDA
+
 - **NPDA**: Recognizes all Context-Free Languages (CFL).
 - **DPDA**: Recognizes only Deterministic Context-Free Languages (DCFL).
 - **Power**: NPDA > DPDA. (Unlike FA where DFA = NFA).
 
 ### 2. Transition Function
 $\delta(q, a, X) = \{(p, Y)\}$
+
 - $q$: Current state.
 - $a$: Input symbol (or $\epsilon$).
 - $X$: Symbol at top of stack.
@@ -28,6 +31,7 @@ $\delta(q, a, X) = \{(p, Y)\}$
 ## Example Problems
 
 **Problem:** How to implement $a^n b^{2n}$ using a PDA?
+
 1. For every 'a' read, push **two** 'X's onto the stack.
 2. For every 'b' read, pop **one** 'X' from the stack.
 3. If stack is empty when input ends, accept.
@@ -39,6 +43,7 @@ $\delta(q, a, X) = \{(p, Y)\}$
 **Topic: Determinism and Conflict in Stack Operations**
 **Tricky Question (GATE 2011/2016):**
 Is a PDA that allows either an $\epsilon$-transition OR an input transition from the same state (with same stack top) deterministic?
+
 - **Analysis:** **NO**. This is a "Shift-Reduce" style conflict. For a PDA to be deterministic, if $\delta(q, \epsilon, X)$ is defined, then $\delta(q, a, X)$ must be undefined for all $a \in \Sigma$.
 - **The "Trap":** Thinking all CFLs have a DPDA.
   - $L = \{ww^R\}$ does NOT have a DPDA.
@@ -52,4 +57,5 @@ Is a PDA that allows either an $\epsilon$-transition OR an input transition from
 ---
 
 ## References
+
 - [Pushdown automaton (Wikipedia)](https://en.wikipedia.org/wiki/Pushdown_automaton)

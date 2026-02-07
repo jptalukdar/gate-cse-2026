@@ -7,12 +7,14 @@ The Pumping Lemma is a property common to all languages in a specific class (Reg
 
 ### 1. Pumping Lemma for Regular Languages (PL-R)
 For any regular $L$, there exists $p$ such that any $w \in L$ with $|w| \ge p$ can be split into $w = xyz$:
+
 1. $y \neq \epsilon$
 2. $|xy| \le p$
 3. $xy^iz \in L$ for all $i \ge 0$.
 
 ### 2. Pumping Lemma for Context-Free Languages (PL-CFL)
 For any CFL $L$, there exists $p$ such that any $w \in L$ with $|w| \ge p$ can be split into $w = uvwxy$:
+
 1. $vx \neq \epsilon$
 2. $|vwx| \le p$
 3. $uv^iwx^iy \in L$ for all $i \ge 0$.
@@ -22,6 +24,7 @@ For any CFL $L$, there exists $p$ such that any $w \in L$ with $|w| \ge p$ can b
 ## Example Problems
 
 **Problem:** Prove $L = \{a^n b^n \mid n \ge 0\}$ is not regular.
+
 1. Assume $L$ is regular. Let pumping length be $p$.
 2. Choose $w = a^p b^p$. Note $|w| = 2p \ge p$.
 3. Split $w=xyz$. Since $|xy| \le p$, $y$ must contain only $a$s.
@@ -35,6 +38,7 @@ For any CFL $L$, there exists $p$ such that any $w \in L$ with $|w| \ge p$ can b
 **Topic: Correct application of quantifier logic in PL**
 **Tricky Question (GATE 2012/2014):**
 Which of the following conditions is necessary for a language to be proven non-regular using PL?
+
 - **Analysis:** You must show that **no matter how** one splits the string into $xyz$ (as long as it fits the 3 conditions), there is **some** $i$ such that $xy^iz \notin L$.
 - **The "Trap":** "I found ONE split that fails, so it's not regular." **Wrong.** You must show it fails for **ALL** valid splits. 
 - **Complexity:** Pumping $i=0$ (Pumping down).
@@ -47,5 +51,6 @@ Which of the following conditions is necessary for a language to be proven non-r
 ---
 
 ## References
+
 - [Pumping lemma for regular languages (Wikipedia)](https://en.wikipedia.org/wiki/Pumping_lemma_for_regular_languages)
 - [Pumping lemma for context-free languages (Wikipedia)](https://en.wikipedia.org/wiki/Pumping_lemma_for_context-free_languages)

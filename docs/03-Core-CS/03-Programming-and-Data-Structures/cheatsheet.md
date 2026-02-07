@@ -21,6 +21,7 @@
 | | Queue with 2 Stacks: Enqueue $O(1)$, Dequeue $O(n)$ | Or vice-versa |
 
 ## ⚠️ Common Traps
+
 - **Operator Precedence**: `*ptr++` is `*(ptr++)`. `++*ptr` is `++(*ptr)`.
 - **Macro Expansion**: Macros do textual substitution. `SQUARE(x) x*x` called with `SQUARE(1+2)` becomes `1+2*1+2` (Evaluates to 5, not 9). Always encompass args in parenthesis `((x)*(x))`.
 - **Structure Padding**: Compilers add padding to align members. Total size $\ge$ Sum of members. Order matters!

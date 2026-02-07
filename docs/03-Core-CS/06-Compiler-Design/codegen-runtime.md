@@ -4,6 +4,7 @@
 This topic covers the mapping of intermediate code to machine-specific code and the management of memory during execution.
 
 ### Runtime Storage
+
 - **Activation Record (Stack Frame)**: Stores information for a single function call (Parameters, Return address, Local variables).
 - **Static vs Dynamic Allocation**:
   - **Static**: Memory allocated at compile time. No recursion.
@@ -13,11 +14,13 @@ This topic covers the mapping of intermediate code to machine-specific code and 
 ## Key Theories & Formulas
 
 ### 1. Intermediate Code (IR)
+
 - **Three-Address Code (3AC)**: Each instruction has at most three operands. (e.g., $x = y + z$).
 - **Quadruples**: (Op, Arg1, Arg2, Result).
 - **Triples**: (Op, Arg1, Arg2). Result is implicit based on the instruction index.
 
 ### 2. Parameter Passing
+
 - **Call by Name**: Substitution based (used in Algol).
 - **Call by Value-Result**: Local copy is worked on, then copied back to actual argument upon return.
 
@@ -26,6 +29,7 @@ This topic covers the mapping of intermediate code to machine-specific code and 
 ## Example Problems
 
 **Problem:** Represent $a = b * -c + b * -c$ in 3AC.
+
 1. $t_1 = -c$
 2. $t_2 = b * t_1$
 3. $t_3 = b * t_1$  *(Actually $t_3 = t_2$ if optimized)*
@@ -39,6 +43,7 @@ This topic covers the mapping of intermediate code to machine-specific code and 
 **Topic: Reference passing and non-local access (Static/Dynamic Links)**
 **Tricky Question (GATE 2011/2015/2018):**
 In a language with nested functions, how does an inner function access a variable declared in an outer function?
+
 - **Analysis:** Using **Static Links**. A static link in an activation record points to the activation record of the function's static (lexical) parent.
 - **The "Trap":** Dynamic Scoping vs Static Scoping.
   - **Static Scoping**: Search in lexical parent.
@@ -52,5 +57,6 @@ In a language with nested functions, how does an inner function access a variabl
 ---
 
 ## References
+
 - [Code generation (compiler) (Wikipedia)](https://en.wikipedia.org/wiki/Code_generation_(compiler))
 - [Call stack (Wikipedia)](https://en.wikipedia.org/wiki/Call_stack)

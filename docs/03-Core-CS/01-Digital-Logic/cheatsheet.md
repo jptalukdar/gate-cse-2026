@@ -18,6 +18,7 @@
 | | Lookahead Adder Delay: Constant ($O(1)$ theoretically) | Larger area cost |
 
 ## ⚠️ Common Traps
+
 - **minterm vs Maxterm**: $\sum m(1, 3)$ is equivalent to $\Pi M(0, 2)$. Don't mix them up.
 - **2's Complement**: To negate a number, flip all bits and add 1. Negating $0$ gives $0$. Negating $-2^{n-1}$ results in overflow.
 - **Overflow**: In 2's comp addition, overflow occurs if adding two positives gives negative, or two negatives gives positive. $V = C_{in} \oplus C_{out}$ (for MSB).

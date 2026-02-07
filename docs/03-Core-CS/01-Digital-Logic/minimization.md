@@ -4,6 +4,7 @@
 Minimization involves reducing the number of gates and inputs required to implement a Boolean function, primarily using K-Maps.
 
 ### Key Terms
+
 - **Implicant**: Any individual minterm or group of minterms (powers of 2) in a K-Map.
 - **Prime Implicant (PI)**: An implicant that cannot be combined with another implicant to form a larger group.
 - **Essential Prime Implicant (EPI)**: A PI that covers at least one minterm that is not covered by any other PI.
@@ -12,11 +13,13 @@ Minimization involves reducing the number of gates and inputs required to implem
 ## Key Theories & Formulas
 
 ### 1. Prime Implicant Determination
+
 - Every cell in the K-Map representing a '1' must be covered.
 - Every EPI must be part of the final minimized expression.
 - Other PIs are chosen to cover any remaining '1's using the minimum number of PIs.
 
 ### 2. NAND-NAND and NOR-NOR Realization
+
 - **SOP** form is implemented using NAND-NAND logic.
 - **POS** form is implemented using NOR-NOR logic.
 
@@ -25,6 +28,7 @@ Minimization involves reducing the number of gates and inputs required to implem
 ## Example Problems
 
 **Problem:** Given $f(A,B,C,D) = \sum m(0, 1, 5, 7, 8, 10, 14, 15)$. Find the number of PIs and EPIs.
+
 1.  **Map Groups:**
     - Group 1: (0, 8) $\implies \overline{B}\overline{C}\overline{D}$
     - Group 2: (0, 1) $\implies \overline{A}\overline{B}\overline{C}$
@@ -44,6 +48,7 @@ Minimization involves reducing the number of gates and inputs required to implem
 **Topic: Implicant Overlap and Minimum NAND Gate Requirement**
 **Tricky Question (GATE 2012):**
 For a function $f$, if the number of PIs is 5, can the number of EPIs be 6?
+
 - **Analysis:** No. By definition, every EPI **is** a PI. Therefore, $EPI \le PI$. 
 - **The "Trap":** Sometimes students count "Redundant PIs" as a separate category or double-count minterms during POS vs SOP comparison.
 - **Real Complexity:** Finding the *absolute minimum* number of 2-input NAND gates for an expression like $A\overline{B} + \overline{A}BC$.
@@ -55,5 +60,6 @@ For a function $f$, if the number of PIs is 5, can the number of EPIs be 6?
 ---
 
 ## References
+
 - [Karnaugh map (Wikipedia)](https://en.wikipedia.org/wiki/Karnaugh_map)
 - [Boolean function minimization (Wikipedia)](https://en.wikipedia.org/wiki/Boolean_function_minimization)

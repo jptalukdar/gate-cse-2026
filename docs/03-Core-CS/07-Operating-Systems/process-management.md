@@ -4,6 +4,7 @@
 A process is a program in execution.
 
 ### Process States
+
 1. **New**: Created.
 2. **Ready**: Waiting in main memory for CPU.
 3. **Running**: Executing on CPU.
@@ -17,6 +18,7 @@ Stores PID, State, PC, Registers, Memory limits, Open files list.
 ## Key Theories & Formulas
 
 ### 1. Operations
+
 - **fork()**: Creates a child process. Returns 0 to child, PID of child to parent.
 - **exec()**: Replaces current process image with a new program.
 
@@ -30,6 +32,7 @@ fork();
 fork();
 fork();
 ```
+
 - Formula: $2^n$ processes (including parent). 
 - **Result:** $2^3 = 8$.
 
@@ -50,6 +53,7 @@ if(fork() == 0) {
     printf("%d", x);
 }
 ```
+
 - **Analysis:**
   - `fork()` creates a **copy** of the address space.
   - Child sets local copy of `x` to 15. Prints 15.
@@ -63,4 +67,5 @@ if(fork() == 0) {
 ---
 
 ## References
+
 - [Process management (computing) (Wikipedia)](https://en.wikipedia.org/wiki/Process_management_(computing))

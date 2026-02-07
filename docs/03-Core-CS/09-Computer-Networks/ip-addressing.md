@@ -4,6 +4,7 @@
 IPv4 addresses are 32-bit unique identifiers for network interfaces.
 
 ### Classful Addressing
+
 - **Class A**: `0...` (1-126). 8-bit Network ID.
 - **Class B**: `10...` (128-191). 16-bit Network ID.
 - **Class C**: `110...` (192-223). 24-bit Network ID.
@@ -14,11 +15,13 @@ IPv4 addresses are 32-bit unique identifiers for network interfaces.
 
 ### 1. CIDR (Classless Inter-Domain Routing)
 Represented as `IP/Prefix`.
+
 - Number of addresses in `/n` block = $2^{32-n}$.
 - **Netmask**: $n$ bits of 1 followed by $(32-n)$ bits of 0.
 
 ### 2. Subnetting
 Borrowing bits from Host ID to create Subnet ID.
+
 - Number of subnets = $2^{\text{borrowed bits}}$.
 - Usable hosts per subnet = $2^{\text{remaining bits}} - 2$. (Exclude Network ID and Directed Broadcast Address).
 
@@ -27,6 +30,7 @@ Borrowing bits from Host ID to create Subnet ID.
 ## Example Problems
 
 **Problem:** How many hosts in a `192.168.1.0/24` network?
+
 - $32 - 24 = 8$ bits for hosts.
 - $2^8 - 2 = 254$ hosts.
 
@@ -37,6 +41,7 @@ Borrowing bits from Host ID to create Subnet ID.
 **Topic: Variable Length Subnet Masking (VLSM) and Aggregation**
 **Tricky Question (GATE 2014/2015/2019):**
 An ISP has block `10.1.1.0/24`. It needs to divide this for 3 companies needing 100, 50, and 50 addresses respectively. Give the prefixes.
+
 - **Analysis:**
   1. 100 needs 7 bits ($2^7=128$). Prefix: `/25`. Range: `10.1.1.0 - 10.1.1.127`.
   2. 50 needs 6 bits ($2^6=64$). Prefix: `/26`. Range: `10.1.1.128 - 10.1.1.191`.
@@ -51,6 +56,7 @@ An ISP has block `10.1.1.0/24`. It needs to divide this for 3 companies needing 
 ---
 
 ## References
+
 - [IP address (Wikipedia)](https://en.wikipedia.org/wiki/IP_address)
 - [IPv4 (Wikipedia)](https://en.wikipedia.org/wiki/IPv4)
 - [Classless Inter-Domain Routing (Wikipedia)](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)

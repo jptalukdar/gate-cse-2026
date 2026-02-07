@@ -18,6 +18,7 @@
 | **DMA** | CPU initializes, DMA transfers block, Interrupts on completion | Cycle Stealing vs Burst Mode |
 
 ## ⚠️ Common Traps
+
 - **Byte vs Word Addressing**: Always check if the memory is byte-addressable. If word-addressable (e.g., 32-bit words), addresses increment by 1 for next word, not 4.
 - **Write Back vs Write Through**: Write Back needs a "Dirty Bit". Write Through doesn't.
 - **Pipeline Stalls**: A conditional branch often causes more penalty than a data dependency. Branch Prediction reduces this.

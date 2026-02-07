@@ -4,12 +4,14 @@
 Layering is a design principle to divide network functionality into manageable pieces.
 
 ### Models
+
 - **OSI (7 Layers)**: Physical, Data Link, Network, Transport, Session, Presentation, Application.
 - **TCP/IP (4/5 Layers)**: Network Access (Link), Internet (Network), Transport, Application.
 
 ## Key Theories & Formulas
 
 ### 1. Data Units (PDU)
+
 - Application: Message
 - Transport: **Segment** (TCP) / **Datagram** (UDP)
 - Network: **Packet**
@@ -24,6 +26,7 @@ Headers are added as data moves down the stack; stripped as it moves up.
 ## Example Problems
 
 **Problem:** At which layer is the IP address added?
+
 - **Result:** Network Layer.
 
 ---
@@ -33,6 +36,7 @@ Headers are added as data moves down the stack; stripped as it moves up.
 **Topic: Functions per Layer and Multi-layer interactions**
 **Tricky Question (GATE 2011/2015/2018):**
 Which layer is responsible for Dialog Control and Token Management?
+
 - **Analysis:** **Session Layer**.
 - **The "Trap":** "Routing vs Forwarding".
   - Routing (finding the path) and Forwarding (moving packet from input to output) are both **Network Layer** functions.
@@ -46,5 +50,6 @@ Which layer is responsible for Dialog Control and Token Management?
 ---
 
 ## References
+
 - [OSI model (Wikipedia)](https://en.wikipedia.org/wiki/OSI_model)
 - [Internet protocol suite (Wikipedia)](https://en.wikipedia.org/wiki/Internet_protocol_suite)

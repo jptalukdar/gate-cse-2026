@@ -4,6 +4,7 @@
 A design paradigm that breaks a problem into smaller independent subproblems of the same type.
 
 ### Steps
+
 1. **Divide**: Split problem into sub-problems.
 2. **Conquer**: Solve sub-problems recursively.
 3. **Combine**: Merge results of sub-problems.
@@ -11,6 +12,7 @@ A design paradigm that breaks a problem into smaller independent subproblems of 
 ## Key Theories & Formulas
 
 ### 1. Common Algorithms
+
 - **Merge Sort**: $2T(n/2) + O(n)$.
 - **Quick Sort**: $T(k) + T(n-k-1) + O(n)$.
 - **Binary Search**: $T(n/2) + O(1)$.
@@ -46,4 +48,5 @@ What is the complexity of finding the Median of $n$ elements in the worst case?
 ---
 
 ## References
+
 - [Divide-and-conquer algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)

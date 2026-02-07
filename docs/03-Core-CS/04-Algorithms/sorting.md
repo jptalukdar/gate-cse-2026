@@ -4,6 +4,7 @@
 Sorting is the arrangement of data in a specific order (ascending/descending).
 
 ### Algorithms Overview
+
 - **Selection**: $O(n^2)$. Find min, swap.
 - **Bubble**: $O(n^2)$. Adjacent swaps.
 - **Insertion**: $O(n^2)$. Best case $O(n)$ for sorted data.
@@ -55,4 +56,5 @@ How many comparisons are made by QuickSort to sort an array of $n$ identical ele
 ---
 
 ## References
+
 - [Sorting algorithm (Wikipedia)](https://en.wikipedia.org/wiki/Sorting_algorithm)
