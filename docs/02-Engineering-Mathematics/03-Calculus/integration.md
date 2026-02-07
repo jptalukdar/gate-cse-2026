@@ -34,6 +34,7 @@ $$\int u \, dv = uv - \int v \, du$$
 
 #### Partial Fractions
 For rational functions P(x)/Q(x):
+
 - Factor Q(x)
 - Decompose into simpler fractions
 - Integrate each part
@@ -48,6 +49,7 @@ For rational functions P(x)/Q(x):
 | $\int \sqrt{a^2 - x^2} \, dx$ | $\frac{x}{2}\sqrt{a^2-x^2} + \frac{a^2}{2}\sin^{-1}(\frac{x}{a}) + C$ |
 
 ### 4. Properties of Definite Integrals
+
 - $\int_a^b f(x) \, dx = -\int_b^a f(x) \, dx$
 - $\int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx$
 - $\int_a^b f(x) \, dx = \int_a^b f(a+b-x) \, dx$
@@ -65,6 +67,7 @@ $$\frac{d}{dx} \int_{a(x)}^{b(x)} f(t) \, dt = f(b(x)) \cdot b'(x) - f(a(x)) \cd
 **Problem 1**: Evaluate $\int_0^1 x e^{x^2} \, dx$
 
 **Solution**:
+
 1. Let u = x², du = 2x dx
 2. $\int_0^1 x e^{x^2} \, dx = \frac{1}{2} \int_0^1 e^u \, du$
 3. $= \frac{1}{2}[e^u]_0^1 = \frac{1}{2}(e - 1) = \mathbf{\frac{e-1}{2}}$
@@ -72,6 +75,7 @@ $$\frac{d}{dx} \int_{a(x)}^{b(x)} f(t) \, dt = f(b(x)) \cdot b'(x) - f(a(x)) \cd
 **Problem 2**: Evaluate $\int \frac{x}{x^2 + 4} \, dx$
 
 **Solution**:
+
 1. Let u = x² + 4, du = 2x dx
 2. $= \frac{1}{2} \int \frac{du}{u} = \frac{1}{2} \ln|u| + C$
 3. $= \mathbf{\frac{1}{2} \ln(x^2 + 4) + C}$
@@ -79,6 +83,7 @@ $$\frac{d}{dx} \int_{a(x)}^{b(x)} f(t) \, dt = f(b(x)) \cdot b'(x) - f(a(x)) \cd
 **Problem 3**: Evaluate $\int_0^\pi x \sin x \, dx$
 
 **Solution** (Integration by Parts):
+
 1. u = x, dv = sin x dx
 2. du = dx, v = -cos x
 3. $= [-x \cos x]_0^\pi + \int_0^\pi \cos x \, dx$
@@ -95,6 +100,7 @@ $$\frac{d}{dx} \int_{a(x)}^{b(x)} f(t) \, dt = f(b(x)) \cdot b'(x) - f(a(x)) \cd
 If $I_n = \int_0^{\pi/2} \sin^n x \, dx$, find the reduction formula.
 
 **Solution**:
+
 1. $I_n = \int_0^{\pi/2} \sin^{n-1} x \cdot \sin x \, dx$
 2. Using IBP: u = sin^(n-1)x, dv = sin x dx
 3. $I_n = [-\sin^{n-1}x \cos x]_0^{\pi/2} + (n-1)\int_0^{\pi/2} \sin^{n-2}x \cos^2 x \, dx$
@@ -104,6 +110,7 @@ If $I_n = \int_0^{\pi/2} \sin^n x \, dx$, find the reduction formula.
 7. **$I_n = \frac{n-1}{n} I_{n-2}$**
 
 **Wallis's Formula**:
+
 - $I_n = \frac{(n-1)!!}{n!!} \times \begin{cases} \frac{\pi}{2} & n \text{ even} \\ 1 & n \text{ odd} \end{cases}$
 
 ---
@@ -125,6 +132,7 @@ $$F'(x) = e^{(x^2)^2} \cdot 2x - e^0 \cdot 0 = \mathbf{2x \cdot e^{x^4}}$$
 Evaluate $\int_{-\pi}^{\pi} (x^3 \cos x + x^2 \sin x) \, dx$
 
 **Solution**:
+
 1. Let f(x) = x³cos x + x²sin x
 2. Check: f(-x) = (-x)³cos(-x) + (-x)²sin(-x) = -x³cos x - x²sin x = -f(x)
 3. f(x) is **odd**!
@@ -133,6 +141,7 @@ Evaluate $\int_{-\pi}^{\pi} (x^3 \cos x + x^2 \sin x) \, dx$
 ---
 
 ## References
+
 - [Integral (Wikipedia)](https://en.wikipedia.org/wiki/Integral)
 - [Integration by parts (Wikipedia)](https://en.wikipedia.org/wiki/Integration_by_parts)
 - [Leibniz integral rule (Wikipedia)](https://en.wikipedia.org/wiki/Leibniz_integral_rule)

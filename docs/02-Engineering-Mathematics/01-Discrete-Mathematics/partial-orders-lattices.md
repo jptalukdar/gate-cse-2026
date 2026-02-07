@@ -1,6 +1,7 @@
 # Partial Orders and Lattices
 
 ## Short Notes
+
 - **Relation**: Binary relation on set $S$.
 - **POSET (Partially Ordered Set)**: A set $S$ with a relation $\preceq$ that is Reflexive, Anti-symmetric, and Transitive.
 - **Hasse Diagram**: A graphical representation of a finite POSET, removing self-loops and implied transitive edges.
@@ -8,6 +9,7 @@
 ## Key Theories & Formulas
 
 ### 1. Elements in POSET
+
 - **Maximal Element**: $m \in S$ s.t. no $x \in S$ has $m \preceq x$ (except $m$).
 - **Maximum Element (Gratest)**: $g \in S$ s.t. $\forall x \in S, x \preceq g$. (Unique if exists).
 - **Minimal** and **Minimum (Least)** defined analogously.
@@ -16,6 +18,7 @@
 - **GLB (Greatest Lower Bound / Infimum)**: The maximum of all lower bounds.
 
 ### 2. Lattices
+
 - **Lattice**: A POSET where every pair of elements $\{a, b\}$ has a unique LUB ($a \lor b$) and unique GLB ($a \land b$).
 - **Bounded Lattice**: Has both a Greatest element (1) and Least element (0).
 - **Complemented Lattice**: Bounded lattice where every element $a$ has a complement $a'$ such that $a \lor a' = 1$ and $a \land a' = 0$.
@@ -27,6 +30,7 @@
 ## Example Problems
 
 **Problem**: Is the set $D_{12}$ (divisors of 12) under divisibility a lattice?
+
 - $D_{12} = \{1, 2, 3, 4, 6, 12\}$.
 - For any $x, y \in D_{12}$:
   - $x \lor y = \text{LCM}(x, y) \in D_{12}$
@@ -67,5 +71,6 @@ Consider the set $A = \{a, b, c\}$. How many distinct Hasse diagrams are possibl
 ---
 
 ## References
+
 - [Partially ordered set (Wikipedia)](https://en.wikipedia.org/wiki/Partially_ordered_set)
 - [Lattice (order) (Wikipedia)](https://en.wikipedia.org/wiki/Lattice_(order))

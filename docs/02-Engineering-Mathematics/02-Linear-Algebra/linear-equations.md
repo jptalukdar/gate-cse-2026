@@ -19,6 +19,7 @@ For a system **Ax = b** of n equations in n unknowns:
 | rank(A) ≠ rank(A|b) | **No solution** |
 
 ### 2. Homogeneous Systems (Ax = 0)
+
 - Always consistent (x = 0 is always a solution)
 - **Trivial solution only**: if rank(A) = n (number of unknowns)
 - **Non-trivial solutions exist**: if rank(A) < n
@@ -27,6 +28,7 @@ For a system **Ax = b** of n equations in n unknowns:
 
 ### 3. Row Echelon Form (REF) & Reduced REF (RREF)
 Steps for Gaussian Elimination:
+
 1. Convert to upper triangular form (REF)
 2. Further reduce to RREF (leading 1s, zeros above and below pivots)
 
@@ -53,6 +55,7 @@ x + 2y + 3z &= 4 \\
 \end{align}$$
 
 **Solution**:
+
 1. Form augmented matrix: $\begin{pmatrix} 1 & 2 & 3 & | & 4 \\ 2 & 3 & 4 & | & 5 \\ 3 & 4 & 5 & | & k \end{pmatrix}$
 2. $R_2 \leftarrow R_2 - 2R_1$: $\begin{pmatrix} 1 & 2 & 3 & | & 4 \\ 0 & -1 & -2 & | & -3 \\ 3 & 4 & 5 & | & k \end{pmatrix}$
 3. $R_3 \leftarrow R_3 - 3R_1$: $\begin{pmatrix} 1 & 2 & 3 & | & 4 \\ 0 & -1 & -2 & | & -3 \\ 0 & -2 & -4 & | & k-12 \end{pmatrix}$
@@ -63,6 +66,7 @@ x + 2y + 3z &= 4 \\
 $$A = \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{pmatrix}$$
 
 **Solution**:
+
 - det(A) = 0 (rows are in arithmetic progression)
 - rank(A) = 2 < 3 (number of unknowns)
 - **Infinite solutions** with 1 free variable
@@ -83,6 +87,7 @@ x + 2y + (a^2-5)z &= a
 For what values of 'a' does the system have (i) no solution, (ii) unique solution, (iii) infinite solutions?
 
 **Solution**:
+
 1. Augmented matrix after row operations:
    $\begin{pmatrix} 1 & 1 & 1 & | & 1 \\ 0 & 1 & 2 & | & 1 \\ 0 & 0 & a^2-8 & | & a-2 \end{pmatrix}$
 
@@ -94,6 +99,7 @@ For what values of 'a' does the system have (i) no solution, (ii) unique solutio
    - If $a = -2\sqrt{2}$: $a - 2 = -2\sqrt{2} - 2 \neq 0$ → **No solution**
 
 **Final Answer**:
+
 - No solution: $a = \pm 2\sqrt{2}$
 - Unique solution: $a \neq \pm 2\sqrt{2}$
 - Infinite solutions: Never (for this system)
@@ -103,5 +109,6 @@ For what values of 'a' does the system have (i) no solution, (ii) unique solutio
 ---
 
 ## References
+
 - [System of linear equations (Wikipedia)](https://en.wikipedia.org/wiki/System_of_linear_equations)
 - [Gaussian elimination (Wikipedia)](https://en.wikipedia.org/wiki/Gaussian_elimination)

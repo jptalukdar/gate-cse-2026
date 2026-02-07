@@ -42,12 +42,14 @@ $$\det\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} = a(ei-f
 $$\det(A) = \prod_{i} a_{ii}$$ (product of diagonal elements)
 
 ### 3. Rank Properties
+
 - $rank(AB) \leq \min(rank(A), rank(B))$
 - $rank(A + B) \leq rank(A) + rank(B)$
 - $rank(A) + nullity(A) = n$ (Rank-Nullity Theorem)
 - If A is m×n and B is n×p with AB = 0, then $rank(A) + rank(B) \leq n$
 
 ### 4. Rank and Determinant Connection
+
 - A square matrix A is **invertible** iff rank(A) = n iff det(A) ≠ 0
 - For any k×k submatrix, if its determinant ≠ 0, the rank of A ≥ k
 - Rank = largest order of non-zero minor
@@ -72,6 +74,7 @@ where adj(A) = transpose of cofactor matrix.
 **Problem 3**: Find the rank of $A = \begin{pmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 3 & 4 \end{pmatrix}$
 
 **Solution**:
+
 1. $R_2 \leftarrow R_2 - 2R_1$: $\begin{pmatrix} 1 & 2 & 3 \\ 0 & 0 & 0 \\ 1 & 3 & 4 \end{pmatrix}$
 2. $R_3 \leftarrow R_3 - R_1$: $\begin{pmatrix} 1 & 2 & 3 \\ 0 & 0 & 0 \\ 0 & 1 & 1 \end{pmatrix}$
 3. Non-zero rows = 2 → **rank = 2**
@@ -86,6 +89,7 @@ where adj(A) = transpose of cofactor matrix.
 If A is a 3×3 matrix such that det(A) = 4, find det(2A⁻¹(adj(A))ᵀ).
 
 **Solution**:
+
 1. $\det(adj(A)) = [\det(A)]^{n-1} = 4^2 = 16$
 2. $\det((adj(A))^T) = \det(adj(A)) = 16$
 3. $\det(A^{-1}) = \frac{1}{\det(A)} = \frac{1}{4}$
@@ -102,6 +106,7 @@ If A is a 3×3 matrix such that det(A) = 4, find det(2A⁻¹(adj(A))ᵀ).
 Let A be a 6×8 matrix with rank 4. Let B be an 8×6 matrix with rank 3. What is the maximum possible rank of AB?
 
 **Solution**:
+
 - AB is a 6×6 matrix
 - rank(AB) ≤ min(rank(A), rank(B)) = min(4, 3) = **3**
 - Maximum possible rank = **3**
@@ -114,9 +119,11 @@ Let A be a 6×8 matrix with rank 4. Let B be an 8×6 matrix with rank 3. What is
 For what value of k is the matrix $A = \begin{pmatrix} 1 & 2 & k \\ 2 & k & 8 \\ k & 8 & 26 \end{pmatrix}$ singular?
 
 **Solution**:
+
 1. Matrix is singular when det(A) = 0
 2. Using cofactor expansion along row 1:
    $\det(A) = 1(26k - 64) - 2(52 - 8k) + k(16 - k^2)$
+
 3. $= 26k - 64 - 104 + 16k + 16k - k^3$
 4. $= -k^3 + 58k - 168$
 5. Setting $-k^3 + 58k - 168 = 0$
@@ -127,6 +134,7 @@ For what value of k is the matrix $A = \begin{pmatrix} 1 & 2 & k \\ 2 & k & 8 \\
 ---
 
 ## References
+
 - [Rank (linear algebra) (Wikipedia)](https://en.wikipedia.org/wiki/Rank_(linear_algebra))
 - [Determinant (Wikipedia)](https://en.wikipedia.org/wiki/Determinant)
 - [Adjugate matrix (Wikipedia)](https://en.wikipedia.org/wiki/Adjugate_matrix)

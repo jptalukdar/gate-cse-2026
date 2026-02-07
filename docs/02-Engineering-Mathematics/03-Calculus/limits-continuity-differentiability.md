@@ -13,6 +13,7 @@ $$\lim_{x \to c} f(x) = L$$
 
 ### Continuity
 A function f(x) is **continuous** at x = c if:
+
 1. f(c) is defined
 2. $\lim_{x \to c} f(x)$ exists
 3. $\lim_{x \to c} f(x) = f(c)$
@@ -68,6 +69,7 @@ $$\lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)}$$
 
 ### 5. Non-Differentiable Cases
 A function is NOT differentiable at x = c if:
+
 - There's a corner/cusp (e.g., |x| at x = 0)
 - There's a vertical tangent
 - There's a discontinuity
@@ -85,12 +87,14 @@ $$\lim_{x \to 0} \frac{\sin 5x}{3x} = \lim_{x \to 0} \frac{\sin 5x}{5x} \cdot \f
 **Problem 2**: Check continuity of $f(x) = \begin{cases} \frac{\sin x}{x} & x \neq 0 \\ k & x = 0 \end{cases}$ at x = 0
 
 **Solution**:
+
 - $\lim_{x \to 0} \frac{\sin x}{x} = 1$
 - For continuity: k = 1
 
 **Problem 3**: Is $f(x) = |x|$ differentiable at x = 0?
 
 **Solution**:
+
 - Left derivative: $\lim_{h \to 0^-} \frac{|h| - 0}{h} = \lim_{h \to 0^-} \frac{-h}{h} = -1$
 - Right derivative: $\lim_{h \to 0^+} \frac{|h| - 0}{h} = \lim_{h \to 0^+} \frac{h}{h} = 1$
 - Left ≠ Right → **Not differentiable** at x = 0
@@ -105,11 +109,13 @@ $$\lim_{x \to 0} \frac{\sin 5x}{3x} = \lim_{x \to 0} \frac{\sin 5x}{5x} \cdot \f
 Evaluate $\lim_{x \to 0} (\cos x)^{1/x^2}$
 
 **Solution**:
+
 1. Form: $1^\infty$ (indeterminate)
 2. Let $y = (\cos x)^{1/x^2}$
 3. $\ln y = \frac{\ln(\cos x)}{x^2}$
 4. Apply L'Hôpital's Rule:
    $$\lim_{x \to 0} \frac{\ln(\cos x)}{x^2} = \lim_{x \to 0} \frac{-\tan x}{2x} = -\frac{1}{2}$$
+
 5. $\ln y = -\frac{1}{2}$
 6. $y = e^{-1/2} = \mathbf{\frac{1}{\sqrt{e}}}$
 
@@ -123,8 +129,10 @@ Evaluate $\lim_{x \to 0} (\cos x)^{1/x^2}$
 For what value of n is $f(x) = x^n \sin(1/x)$ for $x \neq 0$, and $f(0) = 0$, differentiable at x = 0?
 
 **Solution**:
+
 1. Check derivative at x = 0:
    $$f'(0) = \lim_{h \to 0} \frac{h^n \sin(1/h)}{h} = \lim_{h \to 0} h^{n-1} \sin(1/h)$$
+
 2. For this limit to exist:
    - $|h^{n-1} \sin(1/h)| \leq |h|^{n-1}$
    - Need $n - 1 > 0$, i.e., **n > 1**
@@ -141,6 +149,7 @@ For what value of n is $f(x) = x^n \sin(1/x)$ for $x \neq 0$, and $f(0) = 0$, di
 Find the number of points where $f(x) = [x] + \sqrt{x - [x]}$ is discontinuous in [0, 3].
 
 **Solution**:
+
 1. $f(x) = [x] + \sqrt{\{x\}}$ where {x} is the fractional part
 2. $\sqrt{\{x\}}$ is continuous everywhere
 3. [x] is discontinuous at integers: 1, 2, 3
@@ -152,6 +161,7 @@ Find the number of points where $f(x) = [x] + \sqrt{x - [x]}$ is discontinuous i
 ---
 
 ## References
+
 - [Limit of a function (Wikipedia)](https://en.wikipedia.org/wiki/Limit_of_a_function)
 - [Continuous function (Wikipedia)](https://en.wikipedia.org/wiki/Continuous_function)
 - [Derivative (Wikipedia)](https://en.wikipedia.org/wiki/Derivative)

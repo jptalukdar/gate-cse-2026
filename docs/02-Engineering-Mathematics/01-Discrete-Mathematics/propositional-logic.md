@@ -2,6 +2,7 @@
 
 ## Short Notes
 Propositional logic deals with propositions (statements that are either true or false) and their connectivity using logical operators.
+
 - **Tautology**: A formula that is always TRUE.
 - **Contradiction**: A formula that is always FALSE.
 - **Contingency**: A formula that is neither a tautology nor a contradiction.
@@ -83,4 +84,5 @@ Which of the following is logically valid?
 ---
 
 ## References
+
 - [Propositional calculus (Wikipedia)](https://en.wikipedia.org/wiki/Propositional_calculus)

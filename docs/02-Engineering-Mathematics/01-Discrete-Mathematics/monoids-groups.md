@@ -18,12 +18,14 @@ Algebraic structures consisting of a non-empty set combined with one or more bin
 ## Key Theories & Formulas
 
 ### 1. Group Properties
+
 - In a group, the identity element is unique.
 - Every element has a unique inverse.
 - **Idempotent Law**: The only idempotent element ($x*x=x$) in a group is the identity $e$.
 - **Cancellation Law**: $a * b = a * c \implies b = c$ (holds in groups).
 
 ### 2. Subgroups & Order
+
 - **Order of Group $|G|$**: Number of elements in $G$.
 - **Order of Element $|a|$**: Smallest $n$ s.t. $a^n = e$.
 - **Lagrange's Theorem**: Order of a subgroup $H$ divides the order of group $G$. ($|H|$ divides $|G|$).
@@ -69,5 +71,6 @@ How many subgroups does a group $G$ of order 6 have, if $G$ is non-abelian?
 ---
 
 ## References
+
 - [Group theory (Wikipedia)](https://en.wikipedia.org/wiki/Group_theory)
 - [Monoid (Wikipedia)](https://en.wikipedia.org/wiki/Monoid)

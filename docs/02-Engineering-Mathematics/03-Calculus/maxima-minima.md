@@ -27,6 +27,7 @@ At a critical point c where f'(c) = 0:
 | f''(c) = 0 | **Inconclusive** (use first derivative test) |
 
 ### 3. Global Extrema on Closed Interval [a, b]
+
 1. Find all critical points in (a, b)
 2. Evaluate f at critical points and endpoints
 3. Compare: largest = global max, smallest = global min
@@ -57,6 +58,7 @@ Solve: $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g(x, y) = 0$
 **Problem 1**: Find local extrema of f(x) = x³ - 3x + 2
 
 **Solution**:
+
 1. f'(x) = 3x² - 3 = 0 ⟹ x = ±1
 2. f''(x) = 6x
 3. At x = 1: f''(1) = 6 > 0 → **Local Minimum**, f(1) = 0
@@ -65,6 +67,7 @@ Solve: $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g(x, y) = 0$
 **Problem 2**: Find global extrema of f(x) = x³ - 3x on [-2, 2]
 
 **Solution**:
+
 1. Critical points: f'(x) = 3x² - 3 = 0 ⟹ x = ±1
 2. Evaluate:
    - f(-2) = -8 + 6 = -2
@@ -77,6 +80,7 @@ Solve: $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g(x, y) = 0$
 **Problem 3**: Classify critical points of f(x, y) = x² + y² - 2x - 4y + 5
 
 **Solution**:
+
 1. $f_x = 2x - 2 = 0$ ⟹ x = 1
 2. $f_y = 2y - 4 = 0$ ⟹ y = 2
 3. Critical point: (1, 2)
@@ -94,6 +98,7 @@ Solve: $f_x = \lambda g_x$, $f_y = \lambda g_y$, $g(x, y) = 0$
 Classify the critical point of f(x) = x⁴ at x = 0.
 
 **Solution**:
+
 1. f'(x) = 4x³ = 0 ⟹ x = 0
 2. f''(x) = 12x², f''(0) = 0 → Inconclusive!
 3. Use first derivative test:
@@ -112,6 +117,7 @@ Classify the critical point of f(x) = x⁴ at x = 0.
 Classify all critical points of f(x, y) = x³ - 3xy + y³
 
 **Solution**:
+
 1. $f_x = 3x² - 3y = 0$ ⟹ y = x²
 2. $f_y = -3x + 3y² = 0$ ⟹ x = y²
 3. Substitute: x = (x²)² = x⁴ ⟹ x⁴ - x = 0 ⟹ x(x³ - 1) = 0
@@ -130,6 +136,7 @@ Classify all critical points of f(x, y) = x³ - 3xy + y³
 Find the maximum value of f(x, y) = xy subject to x² + y² = 8.
 
 **Solution**:
+
 1. $\nabla f = (y, x)$, $\nabla g = (2x, 2y)$ where g = x² + y² - 8
 2. $y = 2\lambda x$ and $x = 2\lambda y$
 3. From these: $y = 2\lambda(2\lambda y) = 4\lambda² y$
@@ -142,5 +149,6 @@ Find the maximum value of f(x, y) = xy subject to x² + y² = 8.
 ---
 
 ## References
+
 - [Maxima and minima (Wikipedia)](https://en.wikipedia.org/wiki/Maxima_and_minima)
 - [Lagrange multiplier (Wikipedia)](https://en.wikipedia.org/wiki/Lagrange_multiplier)

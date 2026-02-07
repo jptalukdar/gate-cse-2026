@@ -106,5 +106,6 @@ For which value of $k$ is the matrix $A = \begin{pmatrix} 2 & 1 & 0 \\ 0 & 2 & k
 ---
 
 ## References
+
 - [Eigenvalues and eigenvectors (Wikipedia)](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors)
 - [Cayley-Hamilton theorem (Wikipedia)](https://en.wikipedia.org/wiki/Cayley%E2%80%93Hamilton_theorem)

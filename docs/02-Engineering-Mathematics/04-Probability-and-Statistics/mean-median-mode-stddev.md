@@ -21,12 +21,14 @@ $$\bar{x} = \frac{\sum f_i x_i}{\sum f_i}$$
 $$\bar{x} = \frac{\sum f_i m_i}{\sum f_i}$$ where $m_i$ = class mark
 
 **Properties**:
+
 - $\sum(x_i - \bar{x}) = 0$
 - If every value increases by k, mean increases by k
 - If every value multiplied by k, mean multiplied by k
 
 ### 2. Median
 **For ungrouped data**:
+
 - Arrange in order
 - If n is odd: Median = $x_{(n+1)/2}$
 - If n is even: Median = $\frac{x_{n/2} + x_{n/2+1}}{2}$
@@ -35,6 +37,7 @@ $$\bar{x} = \frac{\sum f_i m_i}{\sum f_i}$$ where $m_i$ = class mark
 $$Median = L + \frac{(N/2 - CF)}{f} \times h$$
 
 where:
+
 - L = lower boundary of median class
 - N = total frequency
 - CF = cumulative frequency before median class
@@ -48,6 +51,7 @@ where:
 $$Mode = L + \frac{f_1 - f_0}{2f_1 - f_0 - f_2} \times h$$
 
 where:
+
 - L = lower boundary of modal class
 - f₁ = frequency of modal class
 - f₀ = frequency of class before modal class
@@ -98,6 +102,7 @@ where $d_1 = \bar{x}_1 - \bar{x}_{combined}$, $d_2 = \bar{x}_2 - \bar{x}_{combin
 **Problem 1**: Find mean, median, mode: 2, 3, 3, 4, 5, 5, 5, 6, 7
 
 **Solution**:
+
 - **Mean**: (2+3+3+4+5+5+5+6+7)/9 = 40/9 ≈ **4.44**
 - **Median**: 9 values → 5th value = **5**
 - **Mode**: 5 appears most (3 times) → **5**
@@ -105,6 +110,7 @@ where $d_1 = \bar{x}_1 - \bar{x}_{combined}$, $d_2 = \bar{x}_2 - \bar{x}_{combin
 **Problem 2**: Data: 10, 20, 30, 40, 50. Find variance and standard deviation.
 
 **Solution**:
+
 1. Mean = 150/5 = 30
 2. $\sum(x_i - 30)^2 = 400 + 100 + 0 + 100 + 400 = 1000$
 3. Variance = 1000/5 = **200**
@@ -113,6 +119,7 @@ where $d_1 = \bar{x}_1 - \bar{x}_{combined}$, $d_2 = \bar{x}_2 - \bar{x}_{combin
 **Problem 3**: If the mean of 5 numbers is 8 and one number is removed, the mean becomes 7. Find the removed number.
 
 **Solution**:
+
 1. Sum of 5 numbers = 5 × 8 = 40
 2. Sum of 4 numbers = 4 × 7 = 28
 3. Removed number = 40 - 28 = **12**
@@ -129,11 +136,13 @@ Group B: 100 students, mean = 75, standard deviation = 10
 Find the combined standard deviation.
 
 **Solution**:
+
 1. Combined mean: $\bar{x}_c = \frac{50(60) + 100(75)}{150} = \frac{10500}{150} = 70$
 2. $d_1 = 60 - 70 = -10$, $d_2 = 75 - 70 = 5$
 3. Combined variance:
    $\sigma_c^2 = \frac{50(64 + 100) + 100(100 + 25)}{150} = \frac{50(164) + 100(125)}{150}$
    $= \frac{8200 + 12500}{150} = \frac{20700}{150} = 138$
+
 4. Combined SD = $\sqrt{138}$ ≈ **11.75**
 
 ---
@@ -144,6 +153,7 @@ Find the combined standard deviation.
 If the mean and variance of a dataset are 20 and 16, what are the mean and variance if each value is transformed by Y = 3X - 5?
 
 **Solution**:
+
 1. E[Y] = E[3X - 5] = 3E[X] - 5 = 3(20) - 5 = **55**
 2. Var(Y) = Var(3X - 5) = 9·Var(X) = 9(16) = **144**
 3. New SD = 12
@@ -156,6 +166,7 @@ If the mean and variance of a dataset are 20 and 16, what are the mean and varia
 Stock A has mean return 15% with SD 6%. Stock B has mean return 20% with SD 10%. Which stock is more consistent (less risky)?
 
 **Solution**:
+
 1. CV(A) = 6/15 × 100 = **40%**
 2. CV(B) = 10/20 × 100 = **50%**
 3. **Stock A is more consistent** (lower CV)
@@ -171,6 +182,7 @@ Find the median from:
 | Freq  | 5    | 15    | 20    | 10    |
 
 **Solution**:
+
 1. N = 50, N/2 = 25
 2. Cumulative frequencies: 5, 20, 40, 50
 3. Median class: 20-30 (CF just exceeds 25)
@@ -180,6 +192,7 @@ Find the median from:
 ---
 
 ## References
+
 - [Arithmetic mean (Wikipedia)](https://en.wikipedia.org/wiki/Arithmetic_mean)
 - [Median (Wikipedia)](https://en.wikipedia.org/wiki/Median)
 - [Mode (statistics) (Wikipedia)](https://en.wikipedia.org/wiki/Mode_(statistics))
