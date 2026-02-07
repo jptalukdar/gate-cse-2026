@@ -10,6 +10,7 @@ Propositional logic deals with propositions (statements that are either true or 
 ## Key Theories & Formulas
 
 ### 1. Logical Equivalences
+
 - **Implication**: $p \to q \equiv \neg p \lor q$
 - **Contrapositive**: $p \to q \equiv \neg q \to \neg p$
 - **Bi-conditional**: $p \leftrightarrow q \equiv (p \to q) \land (q \to p)$
@@ -18,11 +19,13 @@ Propositional logic deals with propositions (statements that are either true or 
     - $\neg (p \lor q) \equiv \neg p \land \neg q$
 
 ### 2. Valid Inference Rules
+
 - **Modus Ponens**: $(p \to q) \land p \implies q$
 - **Modus Tollens**: $(p \to q) \land \neg q \implies \neg p$
 - **Hypothetical Syllogism**: $(p \to q) \land (q \to r) \implies (p \to r)$
 
 ### 3. First-Order Logic (Predicates)
+
 - $\forall x (P(x) \land Q(x)) \equiv \forall x P(x) \land \forall x Q(x)$
 - $\exists x (P(x) \lor Q(x)) \equiv \exists x P(x) \lor \exists x Q(x)$
 - **Negation of Quantifiers**:
@@ -34,6 +37,7 @@ Propositional logic deals with propositions (statements that are either true or 
 ## Example Problems
 
 **Problem**: Check if $((p \to q) \land (q \to r)) \to (p \to r)$ is a tautology.
+
 1. Let $A = (p \to q) \land (q \to r)$.
 2. We want to check $A \to (p \to r)$.
 3. This is the **Hypothetical Syllogism** rule, which is a known tautology.
@@ -53,10 +57,12 @@ Propositional logic deals with propositions (statements that are either true or 
 
 **Question (GATE 2014 Variant)**:
 Which of the following is logically valid?
+
 1. $\forall x (P(x) \to Q(x)) \implies (\forall x P(x) \to \forall x Q(x))$
 2. $(\forall x P(x) \to \forall x Q(x)) \implies \forall x (P(x) \to Q(x))$
 
 **Analysis**:
+
 - **Statement 1**: TRUE.
   - If $P(x) \to Q(x)$ is true for all $x$, and if $P(x)$ is true for all $x$, then naturally $Q(x)$ must be true for all $x$ (by Modus Ponens for each instance).
 - **Statement 2**: FALSE.

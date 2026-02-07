@@ -9,6 +9,7 @@ Algebraic structures consisting of a non-empty set combined with one or more bin
 - **Inverse**: $\exists a^{-1}$ such that $a * a^{-1} = e$.
 
 ### Hierarchy
+
 - **Semigroup**: Closure + Associativity.
 - **Monoid**: Semigroup + Identity.
 - **Group**: Monoid + Inverse.
@@ -34,6 +35,7 @@ Algebraic structures consisting of a non-empty set combined with one or more bin
 ## Example Problems
 
 **Problem**: Find the order of element 3 in the group $(\mathbb{Z}_7^*, \times_7)$.
+
 - $\mathbb{Z}_7^* = \{1, 2, 3, 4, 5, 6\}$. Identity is 1.
 - $3^1 \equiv 3 \pmod 7$
 - $3^2 \equiv 9 \equiv 2 \pmod 7$
