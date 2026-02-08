@@ -20,10 +20,12 @@
 - **Sphere**: Vol $\frac{4}{3} \pi r^3$. SA $4 \pi r^2$.
 
 ## Combinatorics (Basics)
+
 - **Handshakes**: In a room of $n$ people, total handshakes = $\binom{n}{2} = \frac{n(n-1)}{2}$.
 - **Letters**: Arrangements of $N$ letters with $r$ repetitions = $N!/r!$.
 
 ## Clocks & Calendars
+
 - **Angle**: $|\frac{11}{2}M - 30H|$.
 - **Overlap**: Hands coincide every $65 \frac{5}{11}$ minutes.
 - **Odd Days**: Year (1), Leap Year (2). Century (100y=5, 200y=3, 300y=1, 400y=0).

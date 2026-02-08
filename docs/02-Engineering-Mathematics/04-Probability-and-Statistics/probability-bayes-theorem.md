@@ -80,6 +80,7 @@ Find P(D|+) (probability of disease given positive test).
 1. P(+|D') = 1 - 0.95 = 0.05 (false positive rate)
 2. P(+) = P(+|D)P(D) + P(+|D')P(D')
    = 0.99(0.01) + 0.05(0.99) = 0.0099 + 0.0495 = 0.0594
+
 3. $P(D|+) = \frac{0.99 \times 0.01}{0.0594} = \frac{0.0099}{0.0594} = \mathbf{0.167}$ (about 17%)
 
 ---

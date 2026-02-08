@@ -3,4 +3,5 @@
 ---
 
 ## References
+
 - [Analytical skill (Wikipedia)](https://en.wikipedia.org/wiki/Analytical_skill)

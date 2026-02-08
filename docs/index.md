@@ -17,6 +17,7 @@ Welcome to the ultimate preparation hub for **GATE Computer Science & Informatio
 
 ### 🛠️ [Core Computer Science](./03-Core-CS/index.md)
 The backbone of the GATE exam, covering technical subjects in depth:
+
 - **Digital Logic**: Boolean algebra, minimization, and circuits.
 - **Computer Organization (COA)**: CPU, Pipelining, and Memory hierarchy.
 - **Programming & DS**: C programming, Stacks, Queues, Trees, and Graphs.
@@ -29,6 +30,7 @@ The backbone of the GATE exam, covering technical subjects in depth:
 
 ### 📐 [Engineering Mathematics](./02-Engineering-Mathematics/index.md)
 Laying the foundation for algorithmic thinking:
+
 - **Discrete Mathematics**: Logic, Sets, Combinatorics, and Graph Theory.
 - **Linear Algebra**: Matrices and Eigenvalues.
 - **Calculus**: Limits and Optimization.
@@ -36,6 +38,7 @@ Laying the foundation for algorithmic thinking:
 
 ### 💡 [General Aptitude](./01-General-Aptitude/index.md)
 Essential high-scoring section:
+
 - **Verbal**, **Quantitative**, **Analytical**, and **Spatial Aptitude**.
 
 ---
