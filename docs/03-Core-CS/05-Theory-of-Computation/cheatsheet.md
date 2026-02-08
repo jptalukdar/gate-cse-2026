@@ -24,6 +24,24 @@
 | **Homomorphism** | $h(L) = \{h(w) \mid w \in L\}$ where $h: \Sigma \to \Gamma^*$ | Substitute each symbol with a string |
 | **Reverse** | $L^R = \{w^R \mid w \in L\}$ | Mirror each string in $L$ |
 
+### When Closure Fails (❌ Cases)
+
+When a language class is **not closed** under an operation, the result may belong to a **larger class**:
+
+| Language | Operation | Result Could Be |
+| :--- | :--- | :--- |
+| **DCFL** | Union | CFL (e.g., $\{a^n b^n\} \cup \{a^n b^{2n}\}$ is CFL, not DCFL) |
+| **DCFL** | Intersection | CFL or CSL |
+| **DCFL** | Concatenation | CFL |
+| **DCFL** | Kleene Star | CFL |
+| **DCFL** | Homomorphism | CFL |
+| **CFL** | Intersection | CSL (e.g., $\{a^n b^n c^m\} \cap \{a^m b^n c^n\} = \{a^n b^n c^n\}$) |
+| **CFL** | Complement | CSL or Recursive |
+| **Recursive** | Homomorphism | RE (can encode halting problem) |
+| **RE** | Complement | May be **Not RE** (e.g., $\overline{L_{HALT}}$ is not RE) |
+
+> **Key Insight**: DCFL operations often yield CFL. CFL intersection/complement yield CSL. RE complement can fall outside RE entirely (co-RE).
+
 ### Language Abbreviations
 
 | Abbreviation | Full Name |
