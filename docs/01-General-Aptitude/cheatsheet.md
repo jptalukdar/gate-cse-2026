@@ -13,11 +13,23 @@
 
 ## Geometry / Mensuration
 
-- **Triangle Area**: $\sqrt{s(s-a)(s-b)(s-c)}$ (Heron's). $\frac{1}{2} b \times h$.
-- **Circle**: Area $\pi r^2$. Circumference $2 \pi r$.
-- **Cylinder**: Vol $\pi r^2 h$. CSA $2 \pi r h$.
-- **Cone**: Vol $\frac{1}{3} \pi r^2 h$. CSA $\pi r l$ ($l = \sqrt{h^2+r^2}$).
-- **Sphere**: Vol $\frac{4}{3} \pi r^3$. SA $4 \pi r^2$.
+| Shape | Area | Circumference / Perimeter | Volume (if 3D) |
+| :--- | :--- | :--- | :--- |
+| **Triangle** | $\frac{1}{2} b h$, $\sqrt{s(s-a)(s-b)(s-c)}$ (Heron's) | $a + b + c$ | — |
+| **Rectangle** | $l \times w$ | $2(l + w)$ | — |
+| **Square** | $a^2$ | $4a$ | — |
+| **Parallelogram** | $b \times h$ | $2(a + b)$ | — |
+| **Trapezium** | $\frac{1}{2}(a + b)h$ | $a + b + c + d$ | — |
+| **Circle** | $\pi r^2$ | $2\pi r$ | — |
+| **Ellipse** | $\pi a b$ | $\approx \pi [3(a+b) - \sqrt{(3a+b)(a+3b)}]$ | — |
+| **Cube** | $6a^2$ | — | $a^3$ |
+| **Cuboid** | $2(lw + lh + wh)$ | — | $lwh$ |
+| **Cylinder** | $2\pi r h$ (CSA), $2\pi r(r+h)$ (TSA) | — | $\pi r^2 h$ |
+| **Cone** | $\pi r l$ (CSA), $\pi r (l + r)$ (TSA) | — | $\frac{1}{3}\pi r^2 h$ |
+| **Sphere** | $4\pi r^2$ | — | $\frac{4}{3}\pi r^3$ |
+| **Hemisphere** | $2\pi r^2$ (CSA), $3\pi r^2$ (TSA) | — | $\frac{2}{3}\pi r^3$ |
+
+**Abbreviations:** $a, b, c, d$ = sides, $l$ = length, $w$ = width, $h$ = height, $r$ = radius, $s$ = semi-perimeter, $l$ (in cone) = slant height, $a, b$ (ellipse) = semi-axes, CSA = Curved Surface Area, TSA = Total Surface Area.
 
 ## Combinatorics (Basics)
 
